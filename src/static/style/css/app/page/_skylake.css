@@ -17,7 +17,7 @@ html {
 #body-content-wrapper {
   position: relative;
   box-shadow: 0 4px 2px -2px rgba(255,255,255,0.2);
-  background-color: #f7f7f7;
+  background-color: #343434;
   height: 100%;
   max-width: 100%;
   z-index: 1;
@@ -2194,14 +2194,15 @@ svg:not(:root) {
 
 .h-pagi-top-no {
   /* color: hsla(0, 0%, 73%, 0.6); */
-  color: rgb(24, 24, 41);
+  /* color: rgb(24, 24, 41); */
   /* color: orangered; */
+  color: #e8e8e8;
   opacity: 1;
 }
 
 #h-pagi-bottom-marker {
   transform: translate3d(0, 100%, 0);
-  color: #181829;
+  color: #e8e8e8;
 }
 
 #h-pagi-bottom {
@@ -3180,7 +3181,8 @@ svg:not(:root) {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #3d3560;
+  /* background: #3d3560; */
+  background: #e8e8e8;
   transform: translate3d(-110%, 0, 0);
 }
 
@@ -3193,7 +3195,7 @@ svg:not(:root) {
   line-height: 120%;
   letter-spacing: -1px;
   font-size: calc(1.1rem + 4.24vw);
-  color: #3d3560;
+  color: #e8e8e8;
   
 }
 
@@ -3217,7 +3219,8 @@ svg:not(:root) {
 .h-txt-desc-txt {
   /* position: absolute; */
   line-height: 180%;
-  color: #a3adb9;
+  /* color: #a3adb9; */
+  color: #e8e8e8;
   font-size: calc(0.4rem + 0.718vw);
   transform: translate3d(0, 100%, 0);
 
@@ -3227,7 +3230,8 @@ svg:not(:root) {
 
 .h-bottom-title {
   font-family: trump-gothic-pro;
-  color: #181829;
+  /* color: #181829; */
+  color: #e8e8e8;
   letter-spacing: 1.6px;
   font-size: calc(0.4rem + 0.5vw);
   transform: translate3d(0, 100%, 0);
