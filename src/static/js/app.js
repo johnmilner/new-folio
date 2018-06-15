@@ -10816,7 +10816,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         Transition.headerDown.from({ el: '#h-pagi-line', p: { x: [0, -102] }, d: 600, e: 'Power4InOut' });
         Transition.headerDown.from({ el: '#h-pagi-bottom-marker', p: { y: [0, 100] }, d: 1200, e: 'Power4InOut' });
 
-        //Transition.headerDown.from({el: "#h-img-0", p: {opacity: [1, 0], x:[0, 16]}, d: 1200, e: 'Power4InOut'})
+        // Transition.headerDown.from({el: "#h-img-0", p: {opacity: [1, 0], y:[0, 100]}, d: 1200, e: 'Power4InOut'})
         // Transition.headerDown.from({el: "#h-img-0-b", p: {opacity: [1, 0], x:[0, 4]}, d: 600, e: 'Power4InOut'})
 
         Transition.headerDown.play({ delay: 500, cb: Transition.reset });
@@ -10853,7 +10853,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         textInit.from({ el: '#h-pagi-line', p: { y: [-102, 0] }, d: 2000, e: 'Power4InOut' });
         textInit.from({ el: '#h-pagi-bottom-marker', p: { y: [100, 0] }, d: 2800, e: 'Power4InOut' });
 
-        // textInit.from({el: "#h-img-" + Transition.currentStep, p: {opacity: [0, 1], y:[16, 0]}, d: 1200, e: 'Power4InOut'})
+        textInit.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], y: [100, 0] }, d: 1200, e: 'Power4InOut' });
         // textInit.from({el: "#h-img-0-b", p: {opacity: [0, 1], x:[4, 0]}, d: 1200, delay: 150, e: 'Power4InOut'})
 
         textInit.play({ cb: setTimeout(Transition.enable_scroll, 4000) });
@@ -10875,7 +10875,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         var imgReset = new skylake.Timeline();
         var isObj23 = skylake.Is.object(imgReset);
 
-        imgReset.from({ el: "#h-img-0-b", p: { opacity: [1, 0], x: [0, 4] }, d: 600, e: 'Power4InOut' });
+        //imgReset.from({el: "#h-img-0-b", p: {opacity: [1, 0], x:[0, 4]}, d: 600, e: 'Power4InOut'})
         imgReset.play();
     };
 
@@ -10884,7 +10884,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         var imgResetIn = new skylake.Timeline();
         var isObj24 = skylake.Is.object(imgResetIn);
 
-        imgResetIn.from({ el: "#h-img-0-b", p: { opacity: [0, 1], x: [4, 0] }, d: 600, delay: 2000, e: 'Power4InOut' });
+        //imgResetIn.from({el: "#h-img-0-b", p: {opacity: [0, 1], x:[4, 0]}, d: 600, delay: 2000, e: 'Power4InOut'})
         imgResetIn.play();
     };
 

@@ -4552,6 +4552,7 @@ a:hover {
           justify-content: center;
   background-size: cover;
   background-position: 50%;
+  opacity: .2;
 }
   
   .h-img {
