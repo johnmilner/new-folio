@@ -300,11 +300,11 @@
                     <div id="h-btn-cover-3" class="h-btn-cover"></div>
                 </div>
             </div>
-            <!-- <div id="h-img-wrap-0" class="h-img-wrap"><img id="h-img-0" class="h-img" src="/static/media/img/home/case/img-0.png" alt=""> <img id="h-img-0-b" class="h-img" src="/static/media/img/home/case/img-0-b.png" alt=""></div>
+            <div id="h-img-wrap-0" class="h-img-wrap"><img id="h-img-0" class="h-img" src="/static/media/img/home/case/img-0.png" alt=""> <img id="h-img-0-b" class="h-img" src="/static/media/img/home/case/img-0-b.png" alt=""></div>
             <div id="h-img-wrap-1" class="h-img-wrap"><img id="h-img-1" class="h-img" src="/static/media/img/home/case/img-1.png" alt=""></div>
             <div id="h-img-wrap-2" class="h-img-wrap"><img id="h-img-2" class="h-img" src="/static/media/img/home/case/img-2.png" alt=""></div>
             <div id="h-img-wrap-3" class="h-img-wrap"><img id="h-img-3" class="h-img" src="/static/media/img/home/case/img-3.png" alt=""></div>
-            </div> -->
+            </div>
         <div id="h-resume" class="oh">
             <section id="h-reco">
                 <div class="oh">

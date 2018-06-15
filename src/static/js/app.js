@@ -10853,8 +10853,8 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         textInit.from({ el: '#h-pagi-line', p: { y: [-102, 0] }, d: 2000, e: 'Power4InOut' });
         textInit.from({ el: '#h-pagi-bottom-marker', p: { y: [100, 0] }, d: 2800, e: 'Power4InOut' });
 
-        textInit.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], x: [16, 0] }, d: 1200, e: 'Power4InOut' });
-        textInit.from({ el: "#h-img-0-b", p: { opacity: [0, 1], x: [4, 0] }, d: 1200, delay: 150, e: 'Power4InOut' });
+        // textInit.from({el: "#h-img-" + Transition.currentStep, p: {opacity: [0, 1], y:[16, 0]}, d: 1200, e: 'Power4InOut'})
+        // textInit.from({el: "#h-img-0-b", p: {opacity: [0, 1], x:[4, 0]}, d: 1200, delay: 150, e: 'Power4InOut'})
 
         textInit.play({ cb: setTimeout(Transition.enable_scroll, 4000) });
     };
@@ -11065,7 +11065,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
             p: { x: [0, -100] }, d: 1200, e: 'Power4InOut' });
 
         if (Transition.currentStep < 4) {
-            Transition.textInOut.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [1, 0], x: [0, 16] }, d: 1200, e: 'Power4InOut' });
+            Transition.textInOut.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [1, 0], y: [0, 100] }, d: 1200, e: 'Power4InOut' });
         }
 
         if (Transition.currentStep <= 5) {
@@ -11092,7 +11092,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
                 Transition.textIn2.from({ el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: { x: [100, 0] }, d: 1200, e: 'Power4InOut' });
 
                 if (Transition.currentStep < 4) {
-                    Transition.textIn2.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], x: [16, 0] }, d: 1200, e: 'Power4InOut' });
+                    Transition.textIn2.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], y: [100, 0] }, d: 1200, e: 'Power4InOut' });
                 }
 
                 if (Transition.currentStep <= 5) {
@@ -11129,7 +11129,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
             p: { x: [0, 100] }, d: 1200, e: 'Power4InOut' });
 
         if (Transition.currentStep < 4) {
-            Transition.textOutIn.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [1, 0], x: [0, 16] }, d: 1200, e: 'Power4InOut' });
+            Transition.textOutIn.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [1, 0], y: [0, 100] }, d: 1200, e: 'Power4InOut' });
         }
 
         if (Transition.currentStep === 0) {
@@ -11161,7 +11161,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
                 }
 
                 if (Transition.currentStep < 4 && Transition.currentStep > -1) {
-                    Transition.textOut2.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], x: [16, 0] }, d: 1200, e: 'Power4InOut' });
+                    Transition.textOut2.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], y: [100, 0] }, d: 1200, e: 'Power4InOut' });
                 }
 
                 Transition.textOut2.play({ cb: setTimeout(Transition.enable_scroll, 3000) });

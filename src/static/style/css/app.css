@@ -867,7 +867,7 @@ $grid-width: 114rem;
   position: relative;
   -webkit-box-shadow: 0 4px 2px -2px rgba(255,255,255,0.2);
           box-shadow: 0 4px 2px -2px rgba(255,255,255,0.2);
-  background-color: #343434;
+  background-color: rgba(52,52,52,0.9);
   height: 100%;
   max-width: 100%;
   z-index: 1;
@@ -4540,65 +4540,71 @@ a:hover {
   
   .h-img-wrap {
   position: absolute;
-  z-index: 1;
-  top: 50%;
+  z-index: -1;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-size: cover;
+  background-position: 50%;
 }
   
   .h-img {
-  -webkit-transform: translate3d(16%, 0, 0);
-          transform: translate3d(16%, 0, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
   opacity: 0;
 }
   
   #h-img-wrap-0 {
-  right: -11vw;
-  -webkit-transform: translate3d(0, -46%, 0);
-          transform: translate3d(0, -46%, 0);
+  /* bottom: -11vw; */
+  /* transform: translate3d(0, -46%, 0); */
 }
   
   #h-img-0,
 #h-img-0-b {
-  width: 52vw;
+  /* width: 52vw; */
 }
   
   #h-img-0 {
   position: relative;
 }
   
-  #h-img-0-b {
+  /* #h-img-0-b {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
   
   #h-img-wrap-1 {
-  right: -3vw;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
+  /* bottom: -3vw; */
+  /* transform: translate3d(0, -50%, 0); */
 }
   
   #h-img-1 {
-  width: 43vw;
+  /* width: 43vw; */
 }
   
   #h-img-wrap-2 {
-  right: -11vw;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
+  /* bottom: -11vw; */
+  /* transform: translate3d(0, -50%, 0); */
 }
   
   #h-img-2 {
-  width: 56vw;
+  /* width: 56vw; */
 }
   
   #h-img-wrap-3 {
-  right: 12vw;
-  -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
+  /* bottom: 12vw; */
+  /* transform: translate3d(0, -50%, 0); */
 }
   
   #h-img-3 {
-  width: 25vw;
+  /* width: 25vw; */
 }
   
   #h-resume {
@@ -4867,7 +4873,7 @@ a:hover {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
           justify-content: center;
-  background-image: url('../../../../media/img/img-0.jpg');
+  background-image: url('../../../../static/media/img/img-0.jpg');
   background-size: cover;
   background-position: 50%;
   -webkit-transform: translate3d(0, 100%, 0);
