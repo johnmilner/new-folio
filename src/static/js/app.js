@@ -10595,14 +10595,6 @@ Transition.nextStep = 0;
 
 Transition.open = function () {
 
-    Transition.intro = new skylake.Timeline();
-    var isObj = skylake.Is.object(Transition.intro);
-    Transition.intro.from({ el: '#sail', p: { y: [-100, 100] }, d: 5000, e: 'Power4InOut', delay: 7000 });
-
-    Transition.outro = new skylake.Timeline();
-    var isObj2 = skylake.Is.object(Transition.outro);
-    Transition.outro.from({ el: '#sail', p: { y: [100, -100] }, d: 5000, e: 'Power4InOut' });
-
     Transition.arr = skylake.Geb.class("h-txt-title");
     Transition.arrTitle = skylake.Geb.class("h-client");
     Transition.arrText = skylake.Geb.class("h-txt-desc-txt");
@@ -10622,6 +10614,15 @@ Transition.open = function () {
     Transition.pagiBottomMarkerWrap = skylake.Geb.id('h-pagi-bottom-marker-wrap');
     Transition.pagiBottomMarker = skylake.Geb.id('h-pagi-bottom-marker');
     Transition.pagiSocialWrap = skylake.Geb.id("h-pagi-social-wrap");
+
+    Transition.intro = new skylake.Timeline();
+    var isObj = skylake.Is.object(Transition.intro);
+    //Transition.intro.from({el: '#sail', p: {y: [100, -100]}, d: 5000, delay: 6000, e: 'Power4InOut'})
+    Transition.intro.from({ el: '.header', p: { scaleX: [1.1, 1] }, scaleY: [1.1, 1], d: 5000, e: 'Power4InOut', delay: 7000 });
+
+    Transition.outro = new skylake.Timeline();
+    var isObj2 = skylake.Is.object(Transition.outro);
+    Transition.outro.from({ el: '#sail', p: { y: [100, -100] }, d: 5000, e: 'Power4InOut' });
 
     Transition.scrollInit();
 };
@@ -11939,17 +11940,35 @@ var Router = function () {
 
 /* eslint-disable */
 
+var t = {};
+t.arrLayerMask = skylake.Geb.class("loader-mask");
+
 var intro = function intro() {
   var tl = new skylake.Timeline();
   var isObj = skylake.Is.object(tl);
   tl.from({ el: '.header', p: { opacity: [0, 1] }, d: 1000, e: 'ExpoIn' });
+
   tl.from({ el: '.tagline', p: { y: [100, 0] }, d: 1600, e: 'Power4InOut', delay: 500 });
 
   tl.from({ el: '#burger-border-wrap', p: { opacity: [0, .6] }, d: 1500, e: 'ExpoOut', delay: 250 });
   tl.from({ el: '.burger-line-hover', p: { x: [105, 0] }, d: 1000, e: 'ExpoOut', delay: 250 });
   tl.from({ el: '#burger-mask', p: { y: [100, -100] }, d: 2000, e: 'ExpoOut', delay: 750 });
 
-  tl.play();
+  tl.play({ cb: mask });
+};
+
+var mask = function mask() {
+
+  var tl2 = new skylake.Timeline();
+  var isObj = skylake.Is.object(tl2);
+
+  tl2.from({ el: t.arrLayerMask[0], p: { y: [100, 0], x: [0, 0], height: [0, 100, 'vh'] }, d: 500, delay: 6000, e: 'Power4InOut' });
+  tl2.from({ el: t.arrLayerMask[1], p: { y: [75, 0], x: [25, 25], height: [0, 100, 'vh'] }, d: 500, delay: 6200, e: 'Power4InOut' });
+  tl2.from({ el: t.arrLayerMask[2], p: { y: [50, 0], x: [50, 50], height: [0, 100, 'vh'] }, d: 500, delay: 6400, e: 'Power4InOut' });
+  tl2.from({ el: t.arrLayerMask[3], p: { y: [25, 0], x: [75, 75], height: [0, 100, 'vh'] }, d: 500, delay: 6600, e: 'Power4InOut' });
+  tl2.from({ el: t.arrLayerMask[4], p: { y: [0, 0], x: [100, 100], height: [0, 100, 'vh'] }, d: 500, delay: 6800, e: 'Power4InOut' });
+
+  tl2.play();
 };
 
 anime.timeline({ loop: false }).add({
@@ -12103,7 +12122,7 @@ var HomeController = function (_Listeners) {
             });
             console.log('Loader.run from HomeController');
             Menu.prototype.bindButtonClick();
-            EventDelegation.destAbout();
+            //EventDelegation.destAbout()  
             //EventDelegation.prototype.run()
         }
     }, {

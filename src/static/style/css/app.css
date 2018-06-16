@@ -164,9 +164,24 @@ $grid-width: 114rem;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #777;
+    background: rgba(52,52,52,1);
     -webkit-transform: translate3d(0,-100%,0);
             transform: translate3d(0,-100%,0);
+    opacity: 1;
+}
+  
+  .layer-mask, .loader-mask {
+    z-index: 1000;
+    width: 25vw;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(52,52,52,1);
+    -webkit-transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1);
+    transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1);
+    -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
     opacity: 1;
 }
   
@@ -702,7 +717,7 @@ $grid-width: 114rem;
   
   .header-container {
     position: relative;
-    //z-index: -5;
+    /* z-index: -5; */
     opacity: 0.35;
   }
   
@@ -788,6 +803,9 @@ $grid-width: 114rem;
             transform: translate3d(0, 0%, 0); 
     opacity: 0;
   }
+  
+  /* transform: scale(1);
+    transition: 1800ms transform cubic-bezier(.28,0,.07,1); */
   
   @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
   

@@ -13,14 +13,6 @@ Transition.nextStep = 0
 
 Transition.open = function() {
 
-Transition.intro = new S.Timeline()
-const isObj = S.Is.object(Transition.intro)
-Transition.intro.from({el: '#sail', p: {y: [-100, 100]}, d: 5000, e: 'Power4InOut', delay: 7000})
-
-Transition.outro = new S.Timeline()
-const isObj2 = S.Is.object(Transition.outro)
-Transition.outro.from({el: '#sail', p: {y: [100, -100]}, d: 5000, e: 'Power4InOut'})
-
 Transition.arr = S.Geb.class("h-txt-title")
 Transition.arrTitle = S.Geb.class("h-client")
 Transition.arrText = S.Geb.class("h-txt-desc-txt")
@@ -40,6 +32,15 @@ Transition.arrBotTitleWrap = S.Geb.class('h-pagi-bottom-title-wrap')
 Transition.pagiBottomMarkerWrap = S.Geb.id('h-pagi-bottom-marker-wrap')
 Transition.pagiBottomMarker = S.Geb.id('h-pagi-bottom-marker')
 Transition.pagiSocialWrap = S.Geb.id("h-pagi-social-wrap")
+
+Transition.intro = new S.Timeline()
+const isObj = S.Is.object(Transition.intro)
+//Transition.intro.from({el: '#sail', p: {y: [100, -100]}, d: 5000, delay: 6000, e: 'Power4InOut'})
+Transition.intro.from({el: '.header', p: {scaleX: [1.1, 1]}, scaleY: [1.1, 1], d: 5000, e: 'Power4InOut', delay: 7000})
+
+Transition.outro = new S.Timeline()
+const isObj2 = S.Is.object(Transition.outro)
+Transition.outro.from({el: '#sail', p: {y: [100, -100]}, d: 5000, e: 'Power4InOut'})
 
 Transition.scrollInit()
 }

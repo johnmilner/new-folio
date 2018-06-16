@@ -55,6 +55,11 @@
                                     <i class="devicon devicon-nodejs-plain colored"></i>
                                 </div>
                             </div>
+                            <div class='loader-mask'></div>
+                            <div class='loader-mask'></div>
+                            <div class='loader-mask'></div>
+                            <div class='loader-mask'></div>
+                            <div class='loader-mask'></div>
                         </header>
                     </div>
                 </div>

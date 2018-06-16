@@ -6,7 +6,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #777;
+    background: rgba(52,52,52,1);
     transform: translate3d(0,-100%,0);
+    opacity: 1;
+}
+
+.layer-mask, .loader-mask {
+    z-index: 1000;
+    width: 25vw;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(52,52,52,1);
+    transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1);
+    transform: translate3d(0,100%,0);
     opacity: 1;
 }

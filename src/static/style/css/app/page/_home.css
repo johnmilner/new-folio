@@ -41,7 +41,7 @@
   }
   .header-container {
     position: relative;
-    //z-index: -5;
+    /* z-index: -5; */
     opacity: 0.35;
   }
   
@@ -120,6 +120,8 @@
     z-index: 20;
     transform: translate3d(0, 0%, 0); 
     opacity: 0;
+    /* transform: scale(1);
+    transition: 1800ms transform cubic-bezier(.28,0,.07,1); */
     
   
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
