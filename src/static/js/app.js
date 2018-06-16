@@ -10795,7 +10795,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         Transition.disable_scroll();
         Transition.headerUp = new skylake.Timeline();
         var isObj3 = skylake.Is.object(Transition.headerUp);
-        Transition.headerUp.from({ el: '.header', p: { y: [0, -100] }, d: 1300, e: 'Power4InOut' });
+        Transition.headerUp.from({ el: '.header', p: { y: [0, -100] }, d: 800, e: 'ExpoOut' });
         Transition.headerUp.play({ cb: Transition.titleInit });
 
         //console.log(divOffset.left, divOffset.top);
@@ -10807,7 +10807,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         Transition.headerDown = new skylake.Timeline();
         var isObj4 = skylake.Is.object(Transition.headerDown);
 
-        Transition.headerDown.from({ el: '.header', p: { y: [-100, 0] }, d: 1300, e: 'Power4InOut' });
+        Transition.headerDown.from({ el: '.header', p: { y: [-100, 0] }, d: 800, e: 'Power4InOut' });
 
         Transition.headerDown.from({ el: Transition.arrBotTitle[0], p: { y: [0, 100] }, d: 600, e: 'Power4InOut' });
         Transition.headerDown.from({ el: Transition.arrBotTitle[1], p: { y: [0, 100] }, d: 600, e: 'Power4InOut' });
@@ -10857,10 +10857,10 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         textInit.from({ el: '#h-pagi-line', p: { x: [-130, 0] }, d: 2000, e: 'Power4InOut' });
         textInit.from({ el: '#h-pagi-bottom-marker', p: { y: [100, 0] }, d: 2800, e: 'Power4InOut' });
 
-        textInit.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], y: [100, 0] }, d: 1200, e: 'Power4InOut' });
+        textInit.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], y: [100, 0] }, d: 1200, delay: 400, e: 'Power4InOut' });
         // textInit.from({el: "#h-img-0-b", p: {opacity: [0, 1], x:[4, 0]}, d: 1200, delay: 150, e: 'Power4InOut'})
 
-        textInit.play({ cb: setTimeout(Transition.enable_scroll, 4000) });
+        textInit.play({ cb: setTimeout(Transition.enable_scroll, 3000) });
     };
 
     Transition.reset = function () {
