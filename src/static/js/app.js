@@ -11947,18 +11947,20 @@ var intro = function intro() {
   var tl = new skylake.Timeline();
   var isObj = skylake.Is.object(tl);
 
+  tl.from({ el: '.header', p: { scale: [1.1, 1] }, d: 2000, e: 'Power4InOut' });
   tl.from({ el: '#burger-border-wrap', p: { opacity: [0, .6] }, d: 1500, e: 'ExpoOut', delay: 250 });
   tl.from({ el: '.burger-line-hover', p: { x: [105, 0] }, d: 1000, e: 'ExpoOut', delay: 250 });
   tl.from({ el: '#burger-mask', p: { y: [100, -100] }, d: 2000, e: 'ExpoOut', delay: 750 });
 
-  tl.from({ el: '.loader-mask-0', p: { y: [-100, -100], opacity: [1, 0] }, d: 1e3, delay: 50, e: 'Power4InOut' });
-  tl.from({ el: '.loader-mask-1', p: { y: [-50, -100], opacity: [1, 0] }, d: 1e3, delay: 100, e: 'Power4InOut' });
-  tl.from({ el: '.loader-mask-2', p: { y: [0, -100], opacity: [1, 0] }, d: 1e3, delay: 150, e: 'Power4InOut' });
-  tl.from({ el: '.loader-mask-3', p: { y: [0, -100], opacity: [1, 0] }, d: 1e3, delay: 200, e: 'Power4InOut' });
+  tl.from({ el: '#sail', p: { y: [0, -100] }, d: 1500, delay: 50, e: 'Power4InOut' });
+
+  // tl.from({el: '.loader-mask-0', p: {y: [0, -100], opacity:[1,0]}, d: 1e3, delay: 50, e: 'Power4InOut'})
+  // tl.from({el: '.loader-mask-1', p: {y: [0, -100], opacity:[1,0]}, d: 1e3, delay: 100, e: 'Power4InOut'})
+  // tl.from({el: '.loader-mask-2', p: {y: [0, -100], opacity:[1,0]}, d: 1e3, delay: 150, e: 'Power4InOut'})
+  // tl.from({el: '.loader-mask-3', p: {y: [0, -100], opacity:[1,0]}, d: 1e3, delay: 200, e: 'Power4InOut'})
 
   tl.from({ el: '.header', p: { opacity: [0, 1] }, d: 250, e: 'ExpoIn' });
   tl.from({ el: '.tagline', p: { y: [100, 0] }, d: 1600, e: 'Power4InOut' });
-  tl.from({ el: '.header', p: { scale: [1.2, 1] }, d: 1600, e: 'Power4InOut' });
 
   tl.play();
 };
