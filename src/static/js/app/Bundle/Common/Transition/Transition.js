@@ -11,6 +11,17 @@ Transition.currentStep = 0
 Transition.nextStep = 0
 
 
+
+Transition.mask = function() {
+
+    const tl2 = new S.Timeline()
+    const isObj = S.Is.object(tl2)
+  
+    
+  
+    tl2.play()
+  }
+
 Transition.open = function() {
 
 Transition.arr = S.Geb.class("h-txt-title")
@@ -37,6 +48,7 @@ Transition.intro = new S.Timeline()
 const isObj = S.Is.object(Transition.intro)
 //Transition.intro.from({el: '#sail', p: {y: [100, -100]}, d: 5000, delay: 6000, e: 'Power4InOut'})
 Transition.intro.from({el: '.header', p: {scaleX: [1.1, 1]}, scaleY: [1.1, 1], d: 5000, e: 'Power4InOut', delay: 7000})
+
 
 Transition.outro = new S.Timeline()
 const isObj2 = S.Is.object(Transition.outro)

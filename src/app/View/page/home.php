@@ -1,6 +1,11 @@
+            <div class='loader-mask-0'></div>
+            <div class='loader-mask-1'></div>
+            <div class='loader-mask-2'></div>
+            <div class='loader-mask-3'></div>
             <header class="header">
                 <div class="page-content">
                     <div class='header-container'>
+                    
                         <header class='header-icons'>
                             <div class="devicons-list-container">
                                 <div class="devicons-list">
@@ -55,11 +60,7 @@
                                     <i class="devicon devicon-nodejs-plain colored"></i>
                                 </div>
                             </div>
-                            <div class='loader-mask'></div>
-                            <div class='loader-mask'></div>
-                            <div class='loader-mask'></div>
-                            <div class='loader-mask'></div>
-                            <div class='loader-mask'></div>
+                            
                         </header>
                     </div>
                 </div>
