@@ -759,7 +759,7 @@ $grid-width: 114rem;
     margin: 40px;
     padding: 10px;
     float: left;
-    background: rgba(41, 152, 255, .5);
+    background: rgba(52,52,52,.3);
     border-radius: 6px;
     opacity: 1;
     border-bottom: 2px solid #8d8d8d;
@@ -774,12 +774,12 @@ $grid-width: 114rem;
     background-image: -webkit-gradient(
         linear,
         left top, right bottom,
-        from(rgba(41, 152, 255, 1)),
-        to(rgba(255,255,255, 1)));
+        from(rgba(52,52,52, 1)),
+        to(rgba(52,52,52, 1)));
     background-image: linear-gradient(
         to right bottom,
-        rgba(41, 152, 255, 1),
-        rgba(255,255,255, 1));
+        rgba(52,52,52, 1),
+        rgba(52,52,52, 1));
     background-size: cover;
     background-position: top;
     position: relative;
@@ -3204,7 +3204,7 @@ a:hover {
 }
   
   #h-pagi-line-wrap {
-  width: 18px;
+  width: 50px;
 }
   
   #h-pagi-line,
@@ -3212,14 +3212,16 @@ a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 20px !important;
+  width: 80px !important;
 }
   
   #h-pagi-line {
   left: 0;
   right: 0;
   background: #d1d6dc;
-  -webkit-transform: translate3d(-102%, 0, 0);
-          transform: translate3d(-102%, 0, 0);
+  -webkit-transform: translate3d(-130%, 0, 0);
+          transform: translate3d(-130%, 0, 0);
 }
   
   #h-pagi-top {
@@ -6936,7 +6938,7 @@ a:hover {
   #h-pagi-bottom-marker-wrap,
   #h-pagi-line-wrap,
   #h-pagi-social-wrap {
-    left: 37px;
+    left: 6px;
   }
 
   #h-client-wrap {

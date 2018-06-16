@@ -288,7 +288,7 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
 
         Transition.headerDown.from({el: Transition.arrPagiTopNo[Transition.currentStep], p: {y: [0, -100]}, d: 1200, e: 'Power4InOut'})
 
-        Transition.headerDown.from({el: '#h-pagi-line', p: {x: [0, -102]}, d: 600, e: 'Power4InOut'})
+        Transition.headerDown.from({el: '#h-pagi-line', p: {x: [0, -130]}, d: 600, e: 'Power4InOut'})
         Transition.headerDown.from({el: '#h-pagi-bottom-marker', p: {y: [0, 100]}, d: 1200, e: 'Power4InOut'})
 
         // Transition.headerDown.from({el: "#h-img-0", p: {opacity: [1, 0], y:[0, 100]}, d: 1200, e: 'Power4InOut'})
@@ -327,7 +327,7 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
 
         textInit.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [-100, 0]}, d: 2800, e: 'Power4InOut'})
 
-        textInit.from({el: '#h-pagi-line', p: {y: [-102, 0]}, d: 2000, e: 'Power4InOut'})
+        textInit.from({el: '#h-pagi-line', p: {x: [-130, 0]}, d: 2000, e: 'Power4InOut'})
         textInit.from({el: '#h-pagi-bottom-marker', p: {y: [100, 0]}, d: 2800, e: 'Power4InOut'})
 
         textInit.from({el: "#h-img-" + Transition.currentStep, p: {opacity: [0, 1], y:[100, 0]}, d: 1200, e: 'Power4InOut'})

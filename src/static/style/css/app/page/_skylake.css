@@ -2134,7 +2134,7 @@ svg:not(:root) {
 }
 
 #h-pagi-line-wrap {
-  width: 18px;
+  width: 50px;
 }
 
 #h-pagi-line,
@@ -2142,13 +2142,15 @@ svg:not(:root) {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 20px !important;
+  width: 80px !important;
 }
 
 #h-pagi-line {
   left: 0;
   right: 0;
   background: #d1d6dc;
-  transform: translate3d(-102%, 0, 0);
+  transform: translate3d(-130%, 0, 0);
 }
 
 #h-pagi-top {
@@ -5593,7 +5595,7 @@ svg:not(:root) {
   #h-pagi-bottom-marker-wrap,
   #h-pagi-line-wrap,
   #h-pagi-social-wrap {
-    left: 37px;
+    left: 6px;
   }
 
   #h-client-wrap {
