@@ -209,7 +209,7 @@ $grid-width: 114rem;
   .tagline {
     color: #fff;
     text-align: center;
-    font-family: "FuturaStd-Book", sans-serif;
+    font-family: "GinesoBold", sans-serif;
     text-transform: uppercase;
     //padding-top: 10em;
     //padding-bottom: 11em;
@@ -237,8 +237,8 @@ $grid-width: 114rem;
     font-size: 9em;
     line-height: 1em;
     font-weight: 100;
-    letter-spacing: 0.42rem;
-    font-family: "FuturaStd-ExtraBold", sans-serif;
+    letter-spacing: 2rem;
+    font-family: "GinesoBold", sans-serif;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   
     @include respond(phone) {
@@ -684,16 +684,16 @@ $grid-width: 114rem;
   .page-content {
     position: relative;
     height: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     background-image: -webkit-gradient(
       linear,
       left top, right bottom,
-      from(rgba(41, 152, 255, 0.3)),
+      from(rgba(52,52,52, 0.3)),
       to(rgba(255, 255, 255, 0.3))
     );
     background-image: linear-gradient(
       to right bottom,
-      rgba(41, 152, 255, 0.3),
+      rgba(52,52,52, 0.3),
       rgba(255, 255, 255, 0.3)
     );
     background-size: cover;
@@ -770,7 +770,7 @@ $grid-width: 114rem;
   }
   
   .header {
-    height: 92vh;
+    height: 100vh;
     background-image: -webkit-gradient(
         linear,
         left top, right bottom,
@@ -794,7 +794,7 @@ $grid-width: 114rem;
   .header {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 92vh
+        height: 100vh
   }
     }
   
@@ -854,7 +854,7 @@ $grid-width: 114rem;
 }
   
   .container {
-  padding: 3rem;
+  /* padding: 3rem; */
   background: #fff;
   position: relative;
   z-index: 1;
@@ -1391,38 +1391,37 @@ a:hover {
   position: absolute;
 }
   
-  #burger-border-top {
+  /* #burger-border-top {
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
   background: #ff3000;
 }
-  
-  #burger-border-left {
+
+#burger-border-left {
   left: 0;
 }
-  
-  #burger-border-left,
+
+#burger-border-left,
 #burger-border-right {
   top: 0;
   width: 1px;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff3000), color-stop(#ed0200), color-stop(#ff096c), to(#d50082));
   background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
 }
-  
-  #burger-border-right {
+
+#burger-border-right {
   right: 0;
 }
-  
-  #burger-border-bottom {
+
+#burger-border-bottom {
   bottom: 0;
   left: 0;
   right: 0;
   height: 1px;
   background: #d50082;
-}
+} */
   
   #burger-mask {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff3000), color-stop(#ed0200), color-stop(#ff096c), to(#d50082));

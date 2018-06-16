@@ -678,7 +678,7 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
     }
     if ( delta !== null) {
         
-        if (delta < 0 && divOffset.top === 30) {
+        if (delta < 0 && divOffset.top === 0) {
             
             Transition.headerUp()
 

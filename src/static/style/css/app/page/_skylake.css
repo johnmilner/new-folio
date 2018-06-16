@@ -5,7 +5,7 @@ html {
 }
 
 .container {
-  padding: 3rem;
+  /* padding: 3rem; */
   background: #fff;
   position: relative;
   z-index: 1;
@@ -505,7 +505,7 @@ svg:not(:root) {
   position: absolute;
 }
 
-#burger-border-top {
+/* #burger-border-top {
   top: 0;
   left: 0;
   right: 0;
@@ -535,7 +535,7 @@ svg:not(:root) {
   right: 0;
   height: 1px;
   background: #d50082;
-}
+} */
 
 #burger-mask {
   background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
