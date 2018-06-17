@@ -71,11 +71,8 @@
                             <h1 class="main-headline-r2">John Milner</h1>
                         </div>
                     </div>
-                    <div id="scroll-wrap" class="oh">
-                        <!-- <div class="tagline">
-                            <h1 class="main-headline-r1">Front-End Web Developer</h1>
-                            <h1 class="main-headline-r2">John Milner</h1>
-                        </div> -->
+                    <div class="scroll-icon">
+                        <div></div>
                     </div>
                 </article>
                 <!-- <div id="h">

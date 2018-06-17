@@ -11964,6 +11964,7 @@ var intro = function intro() {
 
   tl.from({ el: '.header', p: { opacity: [0, 1] }, d: 250, e: 'ExpoIn' });
   tl.from({ el: '.tagline', p: { y: [100, 0] }, d: 1600, e: 'Power4InOut' });
+  tl.from({ el: '.scroll-icon', p: { opacity: [0, 1] }, d: 1200, e: 'Power4InOut' });
 
   tl.play();
 };

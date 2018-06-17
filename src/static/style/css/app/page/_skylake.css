@@ -2149,7 +2149,8 @@ svg:not(:root) {
 #h-pagi-line {
   left: 0;
   right: 0;
-  background: #d1d6dc;
+  /* background: #d1d6dc; */
+  background: rgba(106,106,106,.8);
   transform: translate3d(-130%, 0, 0);
 }
 
@@ -2198,13 +2199,15 @@ svg:not(:root) {
   /* color: hsla(0, 0%, 73%, 0.6); */
   /* color: rgb(24, 24, 41); */
   /* color: orangered; */
-  color: #e8e8e8;
+  /* color: #e8e8e8; */
+  color: rgba(106,106,106,.3);
   opacity: 1;
 }
 
 #h-pagi-bottom-marker {
   transform: translate3d(0, 100%, 0);
-  color: #e8e8e8;
+  /* color: #e8e8e8; */
+  color: rgba(106,106,106,.3);
 }
 
 #h-pagi-bottom {
@@ -3429,6 +3432,7 @@ svg:not(:root) {
 
 #h-img-wrap-0 {
   /* bottom: -11vw; */
+  left: 40vw;
   /* transform: translate3d(0, -46%, 0); */
 }
 
@@ -3438,7 +3442,7 @@ svg:not(:root) {
 }
 
 #h-img-0 {
-  position: relative;
+  /* position: relative; */
 }
 
 /* #h-img-0-b {

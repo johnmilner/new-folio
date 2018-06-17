@@ -135,8 +135,8 @@
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
-            rgba(41, 152, 255, 0.6),
-            rgba(255,255,255, 0.6));
+            rgba(52,52,52, 1),
+            rgba(52,52,52, 1));
     }
   }
   
@@ -151,6 +151,7 @@
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    text-rendering: optimizeLegibility;
     
   }
   
@@ -167,6 +168,32 @@
       letter-spacing: 0.2em;
     }
   }
+
+  .scroll-icon {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    opacity: 0;
+    z-index: 7000;
+  }
+
+  .scroll-icon {
+    width: 16px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #e8e8e8;
+  }
+
+  .scroll-icon div {
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    margin: 4px 5px;
+    border-radius: 2px;
+    background: #e8e8e8;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
 
   /* #scroll-wrap {
     position: absolute;

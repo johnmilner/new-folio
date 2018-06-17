@@ -874,6 +874,7 @@ $grid-width: 114rem;
     -ms-flex-pack: center;
     -webkit-box-pack: center;
             justify-content: center;
+    text-rendering: optimizeLegibility;
     
   }
   
@@ -892,6 +893,32 @@ $grid-width: 114rem;
       letter-spacing: 0.2em;
     }
   }
+  
+  .scroll-icon {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    opacity: 0;
+    z-index: 7000;
+  }
+  
+  .scroll-icon {
+    width: 16px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #e8e8e8;
+  }
+  
+  .scroll-icon div {
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    margin: 4px 5px;
+    border-radius: 2px;
+    background: #e8e8e8;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
   
   /* #scroll-wrap {
     position: absolute;
@@ -3280,7 +3307,8 @@ a:hover {
   #h-pagi-line {
   left: 0;
   right: 0;
-  background: #d1d6dc;
+  /* background: #d1d6dc; */
+  background: rgba(106,106,106,.8);
   -webkit-transform: translate3d(-130%, 0, 0);
           transform: translate3d(-130%, 0, 0);
 }
@@ -3331,14 +3359,16 @@ a:hover {
   /* color: hsla(0, 0%, 73%, 0.6); */
   /* color: rgb(24, 24, 41); */
   /* color: orangered; */
-  color: #e8e8e8;
+  /* color: #e8e8e8; */
+  color: rgba(106,106,106,.3);
   opacity: 1;
 }
   
   #h-pagi-bottom-marker {
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
-  color: #e8e8e8;
+  /* color: #e8e8e8; */
+  color: rgba(106,106,106,.3);
 }
   
   #h-pagi-bottom {
@@ -4626,6 +4656,7 @@ a:hover {
   
   #h-img-wrap-0 {
   /* bottom: -11vw; */
+  left: 40vw;
   /* transform: translate3d(0, -46%, 0); */
 }
   
@@ -4635,7 +4666,7 @@ a:hover {
 }
   
   #h-img-0 {
-  position: relative;
+  /* position: relative; */
 }
   
   /* #h-img-0-b {
@@ -6073,12 +6104,12 @@ a:hover {
         background-image: -webkit-gradient(
             linear,
             left top, right bottom,
-            from(rgba(41, 152, 255, 0.6)),
-            to(rgba(255,255,255, 0.6)));
+            from(rgba(52,52,52, 1)),
+            to(rgba(52,52,52, 1)));
         background-image: linear-gradient(
             to right bottom,
-            rgba(41, 152, 255, 0.6),
-            rgba(255,255,255, 0.6))
+            rgba(52,52,52, 1),
+            rgba(52,52,52, 1))
   }
     }
   
