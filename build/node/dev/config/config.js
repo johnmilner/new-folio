@@ -4,6 +4,7 @@ module.exports = {
         dest: 'src/static/js/app.js',
         watch: [
             './src/static/js/app/**/*.js',
+            './src/static/js/Bundle/**/*.js',
             './src/static/js/Engine/**/*.js',
             './src/static/js/app/Core/*.js',
             './src/static/js/lib/**/*.js',
