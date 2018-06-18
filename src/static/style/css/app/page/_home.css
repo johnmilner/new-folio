@@ -27,11 +27,24 @@
     font-size: 0.9vw;
     opacity: 0.7;
 }
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  background: url('../../../../../static/media/img/bck-noise.jpg')
+
+}
+
+#scene {
+	z-index: 30;
+
+}
+
 .page-content {
     position: relative;
     height: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right bottom,
       rgba(52,52,52, 0.3),
       rgba(255, 255, 255, 0.3)
@@ -67,12 +80,12 @@
             to right bottom,
             rgba(52,52,52, 1),
             rgba(52,52,52, 1));
-    }
+    } */
   }
   .header-container {
     position: relative;
     /* z-index: -5; */
-    opacity: 0.35;
+    /* opacity: 0.35; */
   }
   
   .header-icons {

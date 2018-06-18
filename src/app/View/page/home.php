@@ -4,9 +4,7 @@
             <div class='loader-mask-3'></div> -->
             <header class="header">
                     <canvas class="scene scene--full" id="scene"></canvas>
-                    <!-- <div class="content__inner">
-                        <h2 class="content__title">Quantum</h2>
-                    </div> -->
+
                 
                 <article>
                     <div id="tagline-wrap" class="oh">

@@ -1585,20 +1585,7 @@ const ih = pool.height = 512;
 const canvas = createCanvas();
 ctx = canvas.ctx;
 
-c.fillStyle = "#09F";
-c.fillRect(0, 0, iw, ih);
-const tile = 64;
-const tileCol = "#abc,#CDE,#26D,#18D".split(",");
-const tileInset = 2;
-for(var y = -tile / 2; y < ih; y += tile){
-    for(var x = -tile / 2; x < iw; x += tile){
-       for(var z = 0; z < tileCol.length; z += 1){
-           c.fillStyle = tileCol[z];
-           const ti = tileInset * z;
-           c.fillRect(x + ti,y + ti, tile - ti * 2, tile - ti * 2);
-       }
-    }
- }
+//document.querySelector('canvas').style.background = "url('../../static/media/img/bck-noise.jpg') repeat 0 0";
 
 c.font = "240px GinesoBold";
 c.textAlign = "center";

@@ -170,51 +170,6 @@ $grid-width: 114rem;
     opacity: 1;
 }
   
-  .demo-3 {
-	--color-text: #fff;
-	--color-bg: #A9E7DA;
-	--color-link: #523bdc;
-	--color-link-hover: #fff;
-	--color-title: #fff;
-}
-  
-  #scene {
-	z-index: 30;
-	width: 100vw;
-	height: 100vh;
-}
-  
-  .content__title {
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: -0.025em;
-	font-size: 7vw;
-	color: var(--color-title);
-	line-height: 1;
-	margin: 0;
-	position: relative;
-}
-  
-  .content__title::before,
-.content__title::after {
-	content: '';
-	position: absolute;
-	width: 100px;
-	height: 200px;
-	background: url(../img/dot.png);
-	background-size: 25px;
-	opacity: 0.4;
-}
-  
-  .content__title::before {
-	top: 120%;
-	right: 81%;
-}
-  
-  .content__title::after {
-	bottom: 120%;
-	left: 81%;
-}
-  
   @font-face {
     font-family: "GT-Eesti-Text-Thin";
     src: url("../../../../static/media/sou/GT-Eesti-Text-Thin.otf");
@@ -760,17 +715,23 @@ $grid-width: 114rem;
     opacity: 0.7;
 }
   
+  canvas {
+  width: 100vw;
+  height: 100vh;
+  background: url('../../../../../static/media/img/bck-noise.jpg')
+
+}
+  
+  #scene {
+	z-index: 30;
+
+}
+  
   .page-content {
     position: relative;
     height: 100%;
     min-height: 100vh;
-    background-image: -webkit-gradient(
-      linear,
-      left top, right bottom,
-      from(rgba(52,52,52, 0.3)),
-      to(rgba(255, 255, 255, 0.3))
-    );
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right bottom,
       rgba(52,52,52, 0.3),
       rgba(255, 255, 255, 0.3)
@@ -779,11 +740,6 @@ $grid-width: 114rem;
     background-position: top;
 
     height: 100vh;
-    background-image: -webkit-gradient(
-        linear,
-        left top, right bottom,
-        from(rgba(52,52,52, 1)),
-        to(rgba(52,52,52, 1)));
     background-image: linear-gradient(
         to right bottom,
         rgba(52,52,52, 1),
@@ -792,30 +748,32 @@ $grid-width: 114rem;
     background-position: top;
     position: relative;
     z-index: 20;
-    -webkit-transform: translate3d(0, 0%, 0);
-            transform: translate3d(0, 0%, 0); 
+    transform: translate3d(0, 0%, 0); 
     opacity: 0;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
-    transition: 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
+    transform: scale(1.1);
     transition: 1800ms transform cubic-bezier(.28,0,.07,1);
-    transition: 1800ms transform cubic-bezier(.28,0,.07,1), 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
-  }
+    
   
-  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  
-  .page-content {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 100vh
-  }
+        height: 100vh;
     }
+  
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(52,52,52, 1),
+            rgba(52,52,52, 1));
+    } */
+  }
   
   .header-container {
     position: relative;
     /* z-index: -5; */
-    opacity: 0.35;
+    /* opacity: 0.35; */
   }
   
   .header-icons {
@@ -6119,38 +6077,12 @@ a:hover {
     opacity: 0.7;
 }
   
-  @media screen and (max-width: 55em) {
-	.content__title::before,
-	.content__title::after {
-		width: 50px;
-		height: 100px;
-		background-size: 12px;
-	}
-}
-  
   @media (max-width: 999px)
 {
     #issue-bw-w {
         display: block;
     }
 }
-  
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-            only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-            only screen and (min-width: 125em) {
-  
-  .page-content {
-        background-image: -webkit-gradient(
-            linear,
-            left top, right bottom,
-            from(rgba(52,52,52, 1)),
-            to(rgba(52,52,52, 1)));
-        background-image: linear-gradient(
-            to right bottom,
-            rgba(52,52,52, 1),
-            rgba(52,52,52, 1))
-  }
-    }
   
   @media (min-width: 1701px) {
   #burger {
