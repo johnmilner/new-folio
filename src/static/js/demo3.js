@@ -1585,21 +1585,29 @@ const ih = pool.height = 512;
 const canvas = createCanvas();
 ctx = canvas.ctx;
 
-c.fillStyle = "#09F";
-c.fillRect(0, 0, iw, ih);
-const tile = 64;
-const tileCol = "#abc,#CDE,#26D,#18D".split(",");
-const tileInset = 2;
-for(var y = -tile / 2; y < ih; y += tile){
-    for(var x = -tile / 2; x < iw; x += tile){
-       for(var z = 0; z < tileCol.length; z += 1){
-           c.fillStyle = tileCol[z];
-           const ti = tileInset * z;
-           c.fillRect(x + ti,y + ti, tile - ti * 2, tile - ti * 2);
-       }
+for ( x = 0; x < c.width; x++ ) {
+    for ( y = 0; y < c.height; y++ ) {
+       number = Math.floor( Math.random() * 60 );
+
+       ctx.fillStyle = "rgba(" + number + "," + number + "," + number + "," + opacity + ")";
+       ctx.fillRect(x, y, 1, 1);
     }
  }
-c.font = "120px Arial";
+// c.fillStyle = "#333";
+// c.fillRect(0, 0, iw, ih);
+// const tile = 64;
+// const tileCol = "#000,#f14,#26D,#18D".split(",");
+// const tileInset = 2;
+// for(var y = -tile / 2; y < ih; y += tile){
+//     for(var x = -tile / 2; x < iw; x += tile){
+//        for(var z = 0; z < tileCol.length; z += 1){
+//            c.fillStyle = tileCol[z];
+//            const ti = tileInset * z;
+//            c.fillRect(x + ti,y + ti, tile - ti * 2, tile - ti * 2);
+//        }
+//     }
+//  }
+c.font = "120px GinesoBold";
 c.textAlign = "center";
 c.textBaseline = "middle";
 c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
@@ -1608,22 +1616,25 @@ c.shadowColor = "rgba(0,0,0,0.5)";
 c.lineJoin = "round";
 c.lineWidth = 32;
 c.strokeStyle = "Blue";
-c.fillStyle = "black";
-c.strokeText("Ripple FX",iw / 2, 128);
-c.lineWidth = 16;
-c.strokeStyle = "white";
-c.font = "120px Arial";
-c.strokeText("Ripple FX",iw / 2, 128);
-c.fillText("Ripple FX",iw / 2, 128);
+c.fillStyle = "white";
+//c.strokeText("Ripple FX",iw / 2, 128);
+c.lineWidth = 1;
+c.strokeStyle = "#f56";
+c.font = "120px GinesoBold";
+//c.strokeText("Ripple FX",iw / 2, 128);
+c.fillText("JOHN MILNER",iw / 2, ih / 2);
+
+
 c.fillStyle = "white";
 c.lineWidth = 2;
-c.strokeStyle = "black";
-c.font = "24px Arial  black";
-c.strokeText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
-c.fillText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
-c.fillStyle = "#0F8";
-c.font = "32px Arial black";
-c.fillText("Click mouse button to add ripples",iw / 2,ih - 136);
+c.strokeStyle = "#f56";
+
+// c.font = "24px GinesoBold";
+// c.strokeText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
+// c.fillText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
+// c.fillStyle = "#f95759";
+// c.font = "32px GinesoBold";
+// c.fillText("Click mouse button to add ripples",iw / 2,ih - 136);
 
 resizeCanvas();
 const mouse = createMouse().start(canvas, true);

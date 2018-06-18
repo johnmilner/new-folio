@@ -833,7 +833,40 @@ $grid-width: 114rem;
     );
     background-size: cover;
     background-position: top;
+
+    height: 100vh;
+    background-image: -webkit-gradient(
+        linear,
+        left top, right bottom,
+        from(rgba(52,52,52, 1)),
+        to(rgba(52,52,52, 1)));
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(52,52,52, 1),
+        rgba(52,52,52, 1));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 20;
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0); 
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
+    transition: 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
+    transition: 1800ms transform cubic-bezier(.28,0,.07,1);
+    transition: 1800ms transform cubic-bezier(.28,0,.07,1), 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
   }
+  
+  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  
+  .page-content {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 100vh
+  }
+    }
   
   .header-container {
     position: relative;
@@ -905,39 +938,13 @@ $grid-width: 114rem;
   }
   
   .header {
+
+    /* z-index: 30; */
+	  width: 100vw;
     height: 100vh;
-    background-image: -webkit-gradient(
-        linear,
-        left top, right bottom,
-        from(rgba(52,52,52, 1)),
-        to(rgba(52,52,52, 1)));
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(52,52,52, 1),
-        rgba(52,52,52, 1));
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    z-index: 20;
-    -webkit-transform: translate3d(0, 0%, 0);
-            transform: translate3d(0, 0%, 0); 
-    opacity: 0;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
-    transition: 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
-    transition: 1800ms transform cubic-bezier(.28,0,.07,1);
-    transition: 1800ms transform cubic-bezier(.28,0,.07,1), 1800ms -webkit-transform cubic-bezier(.28,0,.07,1);
+    background: -webkit-canvas(c) no-repeat 50% 50%;
+
   }
-  
-  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
-  
-  .header {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 100vh
-  }
-    }
   
   #tagline-wrap {
     position: absolute;
@@ -6188,7 +6195,7 @@ a:hover {
             only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
             only screen and (min-width: 125em) {
   
-  .header {
+  .page-content {
         background-image: -webkit-gradient(
             linear,
             left top, right bottom,

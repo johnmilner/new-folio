@@ -270,7 +270,7 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         Transition.headerUp = new S.Timeline()
         const isObj3 = S.Is.object(Transition.headerUp)
         Transition.headerUp.from({el: '.scroll-icon', p: {opacity: [1, 0]}, d: 1200, delay: 200, e: 'Power4InOut'})
-        Transition.headerUp.from({el: '.header', p: {y: [0, -100]}, d: 800, e: 'ExpoOut'})
+        Transition.headerUp.from({el: '.header', p: {y: [0, -100]}, d: 1300, e: 'ExpoOut'})
         Transition.headerUp.play({cb: Transition.titleInit})
 
         //console.log(divOffset.left, divOffset.top);
