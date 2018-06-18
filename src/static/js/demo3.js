@@ -1607,20 +1607,20 @@ for ( x = 0; x < c.width; x++ ) {
 //        }
 //     }
 //  }
-c.font = "120px GinesoBold";
+c.font = "240px GinesoBold";
 c.textAlign = "center";
 c.textBaseline = "middle";
 c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
 c.shadowBlur = 5;
 c.shadowColor = "rgba(0,0,0,0.5)";
-c.lineJoin = "round";
+//c.lineJoin = "round";
 c.lineWidth = 32;
-c.strokeStyle = "Blue";
-c.fillStyle = "white";
+//c.strokeStyle = "Blue";
+c.fillStyle = "rgba(0,0,0,0.5)";
 //c.strokeText("Ripple FX",iw / 2, 128);
 c.lineWidth = 1;
 c.strokeStyle = "#f56";
-c.font = "120px GinesoBold";
+c.font = "190px GinesoBold";
 //c.strokeText("Ripple FX",iw / 2, 128);
 c.fillText("JOHN MILNER",iw / 2, ih / 2);
 
