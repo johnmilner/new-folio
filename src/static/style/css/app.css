@@ -170,62 +170,6 @@ $grid-width: 114rem;
     opacity: 1;
 }
   
-  .loader-mask-0 {
-    z-index: 1000;
-    width: 25vw;
-    height: 100vh;
-    position: absolute;
-    left: 0%;
-    /* bottom: 0; */
-    background: rgba(72,72,72,1);
-    /* transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1); */
-    -webkit-transform: translate3d(0,0%,0);
-            transform: translate3d(0,0%,0);
-    opacity: 1;
-}
-  
-  .loader-mask-1 {
-    z-index: 1000;
-    width: 25vw;
-    height: 100vh;
-    position: absolute;
-    left: 25%;
-    /* bottom: 0; */
-    background: rgba(72,72,72,1);
-    /* transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1); */
-    -webkit-transform: translate3d(0,0%,0);
-            transform: translate3d(0,0%,0);
-    opacity: 1;
-}
-  
-  .loader-mask-2 {
-    z-index: 1000;
-    width: 25vw;
-    height: 100vh;
-    position: absolute;
-    left: 50%;
-    /* bottom: 0; */
-    background: rgba(72,72,72,1);
-    /* transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1); */
-    -webkit-transform: translate3d(0,0%,0);
-            transform: translate3d(0,0%,0);
-    opacity: 1;
-}
-  
-  .loader-mask-3 {
-    z-index: 1000;
-    width: 25vw;
-    height: 100vh;
-    position: absolute;
-    left: 75%;
-    /* bottom: 0; */
-    background: rgba(72,72,72,1);
-    /* transition: height .6s cubic-bezier(.28,0,.07,1), bottom .6s cubic-bezier(.28,0,.07,1); */
-    -webkit-transform: translate3d(0,0%,0);
-            transform: translate3d(0,0%,0);
-    opacity: 1;
-}
-  
   .demo-3 {
 	--color-text: #fff;
 	--color-bg: #A9E7DA;
@@ -237,7 +181,7 @@ $grid-width: 114rem;
   #scene {
 	z-index: 30;
 	width: 100vw;
-    height: 100vh;
+	height: 100vh;
 }
   
   .content__title {
@@ -939,10 +883,10 @@ $grid-width: 114rem;
   
   .header {
 
-    /* z-index: 30; */
+    z-index: 30;
 	  width: 100vw;
     height: 100vh;
-    background: -webkit-canvas(c) no-repeat 50% 50%;
+    /* background: url('../../../../static/media/img/bck-noise.jpg'); */
 
   }
   

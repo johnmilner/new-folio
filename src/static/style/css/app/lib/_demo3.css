@@ -9,7 +9,7 @@
 #scene {
 	z-index: 30;
 	width: 100vw;
-    height: 100vh;
+	height: 100vh;
 }
 .content__title {
 	font-family: 'Poppins', sans-serif;

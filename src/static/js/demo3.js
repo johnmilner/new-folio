@@ -1478,14 +1478,14 @@ function createMouse(){
 	function preventDefault(e) {  e.preventDefault() }
 	const mouse = {x : 0,y : 0,buttonRaw : 0};
 	const bm = [1, 2, 4, 6, 5, 3]; // bit masks for mouse buttons
-	const mouseEvents = "mousemove,mousedown,mouseup".split(",");
+	const mouseEvents = "mousemove,mousedown,mouseup,mousewheel".split(",");
 	const m = mouse;
 	function mouseMove(e) {
 		m.bounds = m.element.getBoundingClientRect();
 		m.x = e.pageX - m.bounds.left - scrollX;
 		m.y = e.pageY - m.bounds.top - scrollX;
-		if (e.type === "mousedown") { m.buttonRaw |= bm[e.which - 1] }
-		else if (e.type === "mouseup") { m.buttonRaw &= bm[e.which + 2] }
+		if (e.type === "mousemove") { m.buttonRaw |= bm[e.which - 1] }
+		else if (e.type === "mousewheel") { m.buttonRaw &= bm[e.which + 2] }
 		e.preventDefault();
 	}
 	m.start = function (element, blockContextMenu) {
@@ -1593,6 +1593,7 @@ for ( x = 0; x < c.width; x++ ) {
        ctx.fillRect(x, y, 1, 1);
     }
  }
+ c.backgroundImage = "url('../../../../static/media/img/bck-noise.jpg')";
 // c.fillStyle = "#333";
 // c.fillRect(0, 0, iw, ih);
 // const tile = 64;
