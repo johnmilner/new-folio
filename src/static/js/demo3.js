@@ -1585,29 +1585,21 @@ const ih = pool.height = 512;
 const canvas = createCanvas();
 ctx = canvas.ctx;
 
-for ( x = 0; x < c.width; x++ ) {
-    for ( y = 0; y < c.height; y++ ) {
-       number = Math.floor( Math.random() * 60 );
-
-       ctx.fillStyle = "rgba(" + number + "," + number + "," + number + "," + opacity + ")";
-       ctx.fillRect(x, y, 1, 1);
+c.fillStyle = "#09F";
+c.fillRect(0, 0, iw, ih);
+const tile = 64;
+const tileCol = "#abc,#CDE,#26D,#18D".split(",");
+const tileInset = 2;
+for(var y = -tile / 2; y < ih; y += tile){
+    for(var x = -tile / 2; x < iw; x += tile){
+       for(var z = 0; z < tileCol.length; z += 1){
+           c.fillStyle = tileCol[z];
+           const ti = tileInset * z;
+           c.fillRect(x + ti,y + ti, tile - ti * 2, tile - ti * 2);
+       }
     }
  }
- c.backgroundImage = "url('../../../../static/media/img/bck-noise.jpg')";
-// c.fillStyle = "#333";
-// c.fillRect(0, 0, iw, ih);
-// const tile = 64;
-// const tileCol = "#000,#f14,#26D,#18D".split(",");
-// const tileInset = 2;
-// for(var y = -tile / 2; y < ih; y += tile){
-//     for(var x = -tile / 2; x < iw; x += tile){
-//        for(var z = 0; z < tileCol.length; z += 1){
-//            c.fillStyle = tileCol[z];
-//            const ti = tileInset * z;
-//            c.fillRect(x + ti,y + ti, tile - ti * 2, tile - ti * 2);
-//        }
-//     }
-//  }
+
 c.font = "240px GinesoBold";
 c.textAlign = "center";
 c.textBaseline = "middle";
@@ -1617,7 +1609,7 @@ c.shadowColor = "rgba(0,0,0,0.5)";
 //c.lineJoin = "round";
 c.lineWidth = 32;
 //c.strokeStyle = "Blue";
-c.fillStyle = "rgba(0,0,0,0.5)";
+c.fillStyle = "white";
 //c.strokeText("Ripple FX",iw / 2, 128);
 c.lineWidth = 1;
 c.strokeStyle = "#f56";
@@ -1654,7 +1646,7 @@ function startWebGL(images,width,height) {
     webGL = document.createElement("canvas");
     const w = webGL.width = width ? width : images[0].image.width;
     const h = webGL.height = height ? height : images[0].image.height;
-    webGL.gl = webGL.getContext("webgl");
+    webGL.gl = webGL.getContext("experimental-webgl");
     const gl = webGL.gl;
     const program = createProgram(gl, "simple");
     gl.useProgram(program);
