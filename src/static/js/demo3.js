@@ -6950,7 +6950,7 @@ const shadersSource = {
 					spec = clamp(spec, 0.0, 1.3) - 0.6;
 					spec = pow(spec, 8.0) * 4.0;           
 					vec4 col = texture2D(texture0, offset);
-					col.xyz = col.xyz + spec;
+					//col.xyz = col.xyz + spec;
 					gl_FragColor = col;
 				}`
         }
@@ -7137,31 +7137,54 @@ ctx = canvas.ctx;
 //     }
 //  }
 
-c.font = "120px Arial";
+
+
+c.font = "120px GinesoBold";
 c.textAlign = "center";
 c.textBaseline = "middle";
 c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
 c.shadowBlur = 5;
 c.shadowColor = "rgba(0,0,0,0.5)";
-c.lineJoin = "round";
+//c.lineJoin = "round";
 c.lineWidth = 32;
-c.strokeStyle = "Blue";
-c.fillStyle = "black";
-c.strokeText("Ripple FX",iw / 2, 128);
+//c.strokeStyle = "Blue";
+//c.fillStyle = "white";
+//c.strokeText("Ripple FX",iw / 2, 128);
 c.lineWidth = 16;
-c.strokeStyle = "white";
-c.font = "120px Arial";
-c.strokeText("Ripple FX",iw / 2, 128);
-c.fillText("Ripple FX",iw / 2, 128);
-c.fillStyle = "white";
-c.lineWidth = 2;
 c.strokeStyle = "black";
-c.font = "24px Arial  black";
-c.strokeText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
-c.fillText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
-c.fillStyle = "#0F8";
-c.font = "32px Arial black";
-c.fillText("Click mouse button to add ripples",iw / 2,ih - 136);
+c.font = "120px GinesoBold";
+c.strokeText("JOHN MILNER",iw / 2, 128);
+c.fillStyle = "white";
+c.fillText("JOHN MILNER",iw / 2, 128);
+c.lineWidth = 2;
+
+
+// c.font = "120px Arial";
+// c.textAlign = "center";
+// c.textBaseline = "middle";
+// c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
+// c.shadowBlur = 5;
+// c.shadowColor = "rgba(0,0,0,0.5)";
+// c.lineJoin = "round";
+// c.lineWidth = 32;
+// c.strokeStyle = "Blue";
+// c.fillStyle = "black";
+// c.strokeText("Ripple FX",iw / 2, 128);
+// c.lineWidth = 16;
+// c.strokeStyle = "white";
+// c.font = "120px Arial";
+// c.strokeText("Ripple FX",iw / 2, 128);
+// c.fillText("Ripple FX",iw / 2, 128);
+// c.fillStyle = "white";
+// c.lineWidth = 2;
+// c.strokeStyle = "black";
+// c.font = "24px Arial  black";
+// c.strokeText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
+// c.fillText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
+// c.fillStyle = "#0F8";
+// c.font = "32px Arial black";
+// c.fillText("Click mouse button to add ripples",iw / 2,ih - 136);
+
 
 resizeCanvas();
 const mouse = createMouse().start(canvas, true);
@@ -7192,6 +7215,14 @@ function startWebGL(images,width,height) {
     gl.uniform2f(program.locations.resolution, w, h);
 }
 
+function initBkgnd() {
+  
+}
+
+function handleBkTex(tex) {
+  
+}
+
 function webGLRender(){
     var gl = webGL.gl;
     if(mouse.buttonRaw !== 0){
@@ -7218,5 +7249,19 @@ function webGLRender(){
     gl.uniform1f(loc.time, globalTime / 1000);
     gl.uniform3fv(loc.drops ,drops);
     gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+    
+    // tex = gl.createTexture();
+    // tex.Img = new Image();
+    // tex.Img.src = '../../static/media/img/bck-noise.jpg';
+
+    // gl.bindTexture(gl.TEXTURE_2D, tex);
+    // gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    // gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    // gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+    // gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, tex.Img);
+    // gl.bindTexture(gl.TEXTURE_2D, null);
+    // gl.clearColor(0.0, 0.0, 0.0, 0.0);
+
     ctx.drawImage(webGL, 0, 0, canvas.width, canvas.height);
 }

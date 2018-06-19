@@ -45,6 +45,7 @@
 
 .glcanvas-wrap {
     position: absolute 0;
+    text-rendering: optimizeLegibility;
 }
 
 #glcanvas {

@@ -736,6 +736,7 @@ $grid-width: 114rem;
     right: 0;
     bottom: 0;
     left: 0;
+    text-rendering: optimizeLegibility;
 }
   
   #glcanvas {
