@@ -43,10 +43,12 @@
 
 }
 
+.glcanvas-wrap {
+    position: absolute 0;
+}
+
 #glcanvas {
-  z-index: 30;
-  width: 100vw;
-  height: 100vh;
+    /* background: url('../../../../static/media/img/bck-noise.jpg') repeat 0 0; */
 
 }
 

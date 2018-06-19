@@ -730,10 +730,16 @@ $grid-width: 114rem;
 
 }
   
+  .glcanvas-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
   #glcanvas {
-  z-index: 30;
-  width: 100vw;
-  height: 100vh;
+    /* background: url('../../../../static/media/img/bck-noise.jpg') repeat 0 0; */
 
 }
   
