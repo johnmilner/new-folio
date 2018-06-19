@@ -3,7 +3,7 @@
             <div class='loader-mask-2'></div>
             <div class='loader-mask-3'></div> -->
             <header class="header">
-                    <canvas class="scene scene--full" id="scene"></canvas>
+                    <canvas class="scene scene--full" id="glcanvas"></canvas>
 
                 
                 <article>

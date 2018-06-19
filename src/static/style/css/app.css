@@ -715,15 +715,25 @@ $grid-width: 114rem;
     opacity: 0.7;
 }
   
-  canvas {
+  /* canvas {
   width: 100vw;
   height: 100vh;
-  background: url('../../../../../static/media/img/bck-noise.jpg')
+
+} */
+  
+  .header {
+
+  z-index: 30;
+  width: 100vw;
+  height: 100vh;
+  background: url('../../../../static/media/img/bck-noise.jpg');
 
 }
   
-  #scene {
-	z-index: 30;
+  #glcanvas {
+  z-index: 30;
+  width: 100vw;
+  height: 100vh;
 
 }
   
@@ -837,15 +847,6 @@ $grid-width: 114rem;
     pointer-events: all;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .header {
-
-    z-index: 30;
-	  width: 100vw;
-    height: 100vh;
-    /* background: url('../../../../static/media/img/bck-noise.jpg'); */
-
   }
   
   #tagline-wrap {
