@@ -241,8 +241,8 @@ function drawText(){
 	//am/pm
 	if (guiParams.showPM){
 		ctx.font =  fontStyle(60);
-    ctx.fillText( ampm, rightColumnX, -35 + topOffset);
-    ctx.fillText( ampm2, rightColumnX, -45 + (topOffset + 60));
+    ctx.fillText( ampm, (rightColumnX + 95), -35 + (topOffset + 70));
+    ctx.fillText( ampm2, (rightColumnX + 90), -45 + (topOffset + 130));
 
 	}
 
@@ -252,7 +252,8 @@ function drawText(){
 
 function fontStyle(px, weight){
 	if (!weight) weight = '900';
-	return weight + ' ' + px + 'px Roboto';
+  //return weight + ' ' + px + 'px Roboto';
+  return weight + ' ' + px + 'px FuturaStd-ExtraBold';
 }
 
 function animate() {
