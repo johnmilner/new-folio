@@ -34,21 +34,46 @@
 
 } */
 
+header {
+  background-color: #000;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#info{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  font-family: Roboto;
+  font-weight: 300;
+  color: #FFF;
+}
+
+a {
+  color: #CCC;
+  text-decoration: none;
+}
+
+
 .header {
 
   z-index: 30;
-  width: 100vw;
-  height: 100vh;
-  background: url('../../../../static/media/img/bck-noise.jpg');
+  
+  /* background: url('../../../../static/media/img/bck-noise.jpg'); */
 
 }
 
 .glcanvas-wrap {
     position: absolute 0;
     text-rendering: optimizeLegibility;
+    width: 100vw;
+    height: 100vh;
 }
 
 #glcanvas {
+  /* width: 100vw;
+  height: 100vh; */
     /* background: url('../../../../static/media/img/bck-noise.jpg') repeat 0 0; */
 
 }

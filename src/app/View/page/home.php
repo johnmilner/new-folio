@@ -3,8 +3,8 @@
             <div class='loader-mask-2'></div>
             <div class='loader-mask-3'></div> -->
             <header class="header">
-                <div class="glcanvas-wrap" >
-                    <canvas id="glcanvas"></canvas>
+                <div id="glcanvas-wrap" >
+
                 </div>
                 
                 <article>
