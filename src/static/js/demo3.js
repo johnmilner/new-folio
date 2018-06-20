@@ -7122,68 +7122,25 @@ const ih = pool.height = 512;
 const canvas = createCanvas();
 ctx = canvas.ctx;
 
-// c.fillStyle = "#09F";
-// c.fillRect(0, 0, iw, ih);
-// const tile = 64;
-// const tileCol = "#abc,#CDE,#26D,#18D".split(",");
-// const tileInset = 2;
-// for(var y = -tile / 2; y < ih; y += tile){
-//     for(var x = -tile / 2; x < iw; x += tile){
-//        for(var z = 0; z < tileCol.length; z += 1){
-//            c.fillStyle = tileCol[z];
-//            const ti = tileInset * z;
-//            c.fillRect(x + ti,y + ti, tile - ti * 2, tile - ti * 2);
-//        }
-//     }
-//  }
-
-
-
 c.font = "120px GinesoBold";
 c.textAlign = "center";
 c.textBaseline = "middle";
 c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
 c.shadowBlur = 5;
 c.shadowColor = "rgba(0,0,0,0.5)";
-//c.lineJoin = "round";
 c.lineWidth = 32;
-//c.strokeStyle = "Blue";
-//c.fillStyle = "white";
-//c.strokeText("Ripple FX",iw / 2, 128);
 c.lineWidth = 16;
 c.strokeStyle = "black";
-c.font = "120px GinesoBold";
-c.strokeText("JOHN MILNER",iw / 2, 128);
+c.strokeText("JOHN MILNER", iw / 2, (ih / 2));
 c.fillStyle = "white";
-c.fillText("JOHN MILNER",iw / 2, 128);
+c.fillText("JOHN MILNER", iw / 2, (ih / 2));
 c.lineWidth = 2;
+c.font = "50px GinesoBold";
+c.fillStyle = "#f95759";
+c.strokeStyle = "black";
+c.strokeText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
+c.fillText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
 
-
-// c.font = "120px Arial";
-// c.textAlign = "center";
-// c.textBaseline = "middle";
-// c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
-// c.shadowBlur = 5;
-// c.shadowColor = "rgba(0,0,0,0.5)";
-// c.lineJoin = "round";
-// c.lineWidth = 32;
-// c.strokeStyle = "Blue";
-// c.fillStyle = "black";
-// c.strokeText("Ripple FX",iw / 2, 128);
-// c.lineWidth = 16;
-// c.strokeStyle = "white";
-// c.font = "120px Arial";
-// c.strokeText("Ripple FX",iw / 2, 128);
-// c.fillText("Ripple FX",iw / 2, 128);
-// c.fillStyle = "white";
-// c.lineWidth = 2;
-// c.strokeStyle = "black";
-// c.font = "24px Arial  black";
-// c.strokeText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
-// c.fillText("Using WebGL and 2D Canvas",iw / 2,ih - 76);
-// c.fillStyle = "#0F8";
-// c.font = "32px Arial black";
-// c.fillText("Click mouse button to add ripples",iw / 2,ih - 136);
 
 
 resizeCanvas();
@@ -7249,19 +7206,6 @@ function webGLRender(){
     gl.uniform1f(loc.time, globalTime / 1000);
     gl.uniform3fv(loc.drops ,drops);
     gl.drawArrays(gl.TRIANGLES, 0, 6);
-
-    
-    // tex = gl.createTexture();
-    // tex.Img = new Image();
-    // tex.Img.src = '../../static/media/img/bck-noise.jpg';
-
-    // gl.bindTexture(gl.TEXTURE_2D, tex);
-    // gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
-    // gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
-    // gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
-    // gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, tex.Img);
-    // gl.bindTexture(gl.TEXTURE_2D, null);
-    // gl.clearColor(0.0, 0.0, 0.0, 0.0);
 
     ctx.drawImage(webGL, 0, 0, canvas.width, canvas.height);
 }

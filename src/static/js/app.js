@@ -11965,7 +11965,7 @@ var intro = function intro() {
   // tl.from({el: '.loader-mask-3', p: {y: [0, -100], opacity:[1,0]}, d: 1e3, delay: 200, e: 'Power4InOut'})
 
   tl.from({ el: '.header', p: { opacity: [0, 1] }, d: 250, e: 'ExpoIn' });
-  tl.from({ el: '.tagline', p: { y: [100, 0] }, d: 1600, e: 'Power4InOut' });
+  //tl.from({el: '.tagline', p: {y: [100, 0]}, d: 1600, e: 'Power4InOut'})
   tl.from({ el: '.scroll-icon', p: { opacity: [0, 1] }, d: 1200, delay: 2000, e: 'Power4InOut' });
 
   tl.play();
