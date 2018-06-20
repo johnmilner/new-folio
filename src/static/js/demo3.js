@@ -69,7 +69,7 @@ function init() {
     canvas.id     = "glcanvas";
     canvas.style.zIndex   = 8;
     canvas.style.position = "absolute";
-    div.appendChild(canvas)
+    //div.appendChild(canvas)
 // }
 
 //   loadCanvas();
