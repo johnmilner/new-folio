@@ -9,6 +9,7 @@
 	(C) @felixturner / www.airtight.cc
 
 */
+import S from 'skylake'
 
 
 var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
@@ -135,9 +136,9 @@ function init() {
 	onResize();
 
 	//fade up from black
-  TweenLite.to(material, 2, {opacity:1});
-  // anim = new S.Merom({el: material, p: {opacity: [0, 1]}, d: 2000, e: 'Power4Out'})
-  // anim.play()
+  //TweenLite.to(material, 2, {opacity:1});
+  	anim = new S.Merom({el: material, p: {opacity: [0, 1]}, d: 2000, e: 'Power4Out'})
+  	anim.play()
 	drawText();
 	setInterval(drawText,1000);
 
@@ -279,3 +280,6 @@ function onResize() {
 }
 
 init();
+
+export default demo3
+

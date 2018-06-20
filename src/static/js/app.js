@@ -10795,7 +10795,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         Transition.disable_scroll();
         Transition.headerUp = new skylake.Timeline();
         var isObj3 = skylake.Is.object(Transition.headerUp);
-        Transition.headerUp.from({ el: '.scroll-icon', p: { opacity: [1, 0] }, d: 1200, delay: 200, e: 'Power4InOut' });
+        //Transition.headerUp.from({el: '.scroll-icon', p: {opacity: [1, 0]}, d: 1200, delay: 200, e: 'Power4InOut'})
         Transition.headerUp.from({ el: '.header', p: { y: [0, -100] }, d: 1300, e: 'ExpoOut' });
         Transition.headerUp.play({ cb: Transition.titleInit });
 
@@ -10820,7 +10820,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
 
         Transition.headerDown.from({ el: '#h-pagi-line', p: { x: [0, -130] }, d: 600, e: 'Power4InOut' });
         Transition.headerDown.from({ el: '#h-pagi-bottom-marker', p: { y: [0, 100] }, d: 1200, e: 'Power4InOut' });
-        Transition.headerDown.from({ el: '.scroll-icon', p: { opacity: [0, 1] }, d: 1200, delay: 2000, e: 'Power4InOut' });
+        //Transition.headerDown.from({el: '.scroll-icon', p: {opacity: [0, 1]}, d: 1200, e: 'Power4InOut'})
 
         // Transition.headerDown.from({el: "#h-img-0", p: {opacity: [1, 0], y:[0, 100]}, d: 1200, e: 'Power4InOut'})
         // Transition.headerDown.from({el: "#h-img-0-b", p: {opacity: [1, 0], x:[0, 4]}, d: 600, e: 'Power4InOut'})

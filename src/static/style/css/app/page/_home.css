@@ -221,7 +221,7 @@ canvas {
 
   .scroll-icon {
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     opacity: 0;
     z-index: 7000;

@@ -46,23 +46,7 @@
         <!-- CSS after Typekit is better -->
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <!-- <link rel="stylesheet" href="./static/style/css/app.css"> -->
-        <link rel="preload" href="./static/style/css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <style type="text/css">
-            .hidden {display:none;}
-        </style>
-        <script type="text/javascript">
-            try {
-                var elm = document.getElementsByTagName("html")[0];
-                var old = elm.class || "";
-                elm.class=old+" fouc-fix";
-                document.addEventListener("DOMContentLoaded",function(event) {
-                    elm.class=old;
-                });
-            }
-            catch(thr) {
-            }  
-   </script>
+        <link rel="stylesheet" href="./static/style/css/app.css">
         <!-- <link rel="preload" href="./static/style/css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="path/to/mystylesheet.css"></noscript> -->
     </head>
