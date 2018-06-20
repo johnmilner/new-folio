@@ -4360,6 +4360,7 @@ a:hover {
   
   #h-txt {
   text-align: left;
+  z-index: 0;
 }
   
   #h-txt-desc-line-container {

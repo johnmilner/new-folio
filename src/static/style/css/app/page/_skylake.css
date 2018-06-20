@@ -3165,6 +3165,7 @@ svg:not(:root) {
 
 #h-txt {
   text-align: left;
+  z-index: 0;
 }
 
 #h-txt-desc-line-container {

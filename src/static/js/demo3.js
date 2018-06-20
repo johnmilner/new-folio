@@ -7114,6 +7114,7 @@ drops[0] = 0.5;
 drops[1] = 0.1;
 drops[2] = -2;
 
+
 var pool = document.createElement("canvas");
 const c = pool.ctx = pool.getContext("2d");
 
@@ -7122,24 +7123,35 @@ const ih = pool.height = 512;
 const canvas = createCanvas();
 ctx = canvas.ctx;
 
-c.font = "120px GinesoBold";
-c.textAlign = "center";
-c.textBaseline = "middle";
-c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
-c.shadowBlur = 5;
-c.shadowColor = "rgba(0,0,0,0.5)";
-c.lineWidth = 32;
-c.lineWidth = 16;
-c.strokeStyle = "black";
-c.strokeText("JOHN MILNER", iw / 2, (ih / 2));
-c.fillStyle = "white";
-c.fillText("JOHN MILNER", iw / 2, (ih / 2));
-c.lineWidth = 2;
-c.font = "50px GinesoBold";
-c.fillStyle = "#f95759";
-c.strokeStyle = "black";
-c.strokeText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
-c.fillText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
+
+function renderText() {
+
+	  // let ctx = document.querySelector('glcanvas').getContext('2d');
+    // ctx.font = `120px "${FONT_NAME}"`;
+    c.font = "120px GinesoBold";
+    c.textAlign = "center";
+    c.textBaseline = "middle";
+    c.shadowOffsetX = pool.ctx.shadowOffsetY = 5;
+    c.shadowBlur = 5;
+    c.shadowColor = "rgba(0,0,0,0.5)";
+    c.lineWidth = 32;
+    c.lineWidth = 16;
+    c.strokeStyle = "black";
+    c.strokeText("JOHN MILNER", iw / 2, (ih / 2));
+    c.fillStyle = "white";
+    c.fillText("JOHN MILNER", iw / 2, (ih / 2));
+    c.lineWidth = 2;
+    c.font = "50px GinesoBold";
+    c.fillStyle = "#f95759";
+    c.strokeStyle = "black";
+    c.strokeText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
+    c.fillText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
+}
+
+document.fonts.load('120px "GinesoBold"').then(renderText);
+document.fonts.load('50px "GinesoBold"').then(renderText);
+
+
 
 
 

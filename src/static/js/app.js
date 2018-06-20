@@ -10825,7 +10825,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         // Transition.headerDown.from({el: "#h-img-0", p: {opacity: [1, 0], y:[0, 100]}, d: 1200, e: 'Power4InOut'})
         // Transition.headerDown.from({el: "#h-img-0-b", p: {opacity: [1, 0], x:[0, 4]}, d: 600, e: 'Power4InOut'})
 
-        Transition.headerDown.play({ cb: Transition.reset });
+        Transition.headerDown.play({ delay: 800, cb: Transition.reset });
         //console.log(divOffset.left, divOffset.top);
     };
 
@@ -10849,7 +10849,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         textInit.from({ el: Transition.arrBotAgency[Transition.currentStep], p: { y: [100, 0] }, d: 1800, e: 'Power4InOut' });
         textInit.from({ el: Transition.arrBotYear[Transition.currentStep], p: { y: [100, 0] }, d: 2000, e: 'Power4InOut' });
 
-        textInit.from({ el: '#h-txt-desc-line', p: { x: [-110, 0] }, d: 2800, e: 'Power4InOut' });
+        textInit.from({ el: '#h-txt-desc-line', p: { x: [-110, 0], opacity: [0, 1] }, d: 2800, e: 'Power4InOut' });
 
         Transition.arrTopPagiWrap[Transition.currentStep + 1].style.height = "auto";
         Transition.arrTopTitleWrap[Transition.currentStep + 1].style.height = "auto";
@@ -10870,7 +10870,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         var elReset = new skylake.Timeline();
         var isObj15 = skylake.Is.object(elReset);
 
-        //elReset.from({el: '#h-txt-desc-line', p: {x: [0, -100]}, d: 1200, e: 'Power4InOut'})
+        elReset.from({ el: '#h-txt-desc-line', p: { y: [0, -100] } });
 
         console.log('hello from Transition.reset');
         elReset.play();
@@ -11149,7 +11149,11 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
                 Transition.textOut2 = new skylake.Timeline();
                 var isObj11 = skylake.Is.object(Transition.textOut2);
 
-                Transition.textOut2.from({ el: '#h-txt-desc-line', p: { x: [-110, 0] }, d: 1200, e: 'Power4InOut' });
+                if (Transition.currentStep === -1) {
+                    Transition.textOut2.from({ el: '#h-txt-desc-line', p: { x: [-110, -110] }, d: 1200, e: 'Power4InOut' });
+                } else {
+                    Transition.textOut2.from({ el: '#h-txt-desc-line', p: { x: [-110, 0] }, d: 1200, e: 'Power4InOut' });
+                }
 
                 Transition.textOut2.from({ el: Transition.arr[Transition.currentStep], p: { y: [100, 0] }, d: 1200, e: 'Power4InOut' });
                 Transition.textOut2.from({ el: Transition.arrText[Transition.currentStep], p: { y: [100, 0] }, d: 1200, e: 'Power4InOut' });
