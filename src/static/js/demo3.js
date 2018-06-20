@@ -9,12 +9,18 @@
 	(C) @felixturner / www.airtight.cc
 
 */
+function unloadScrollBars() {
+  document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+  document.body.scroll = "no"; // ie only
+}
 
+unloadScrollBars()
 
-var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+//var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var days = ['Front-End Web Developer'];
+//var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 var CANVAS_W = 1600;
-var CANVAS_H = 500;
+var CANVAS_H = 900;
 var MESH_DIMS = 20;
 var canvasAspect = CANVAS_W/CANVAS_H;
 
@@ -180,55 +186,64 @@ function drawText(){
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
 	var seconds = now.getSeconds();
-	var ampm = hours >= 12 ? 'PM' : 'AM';
+  // var ampm = hours >= 12 ? 'PM' : 'AM';
+  var ampm = 'WEB';
+  var ampm2 = 'DEVELOPER';
 	hours = hours % 12;
 	hours = hours ? hours : 12; // the hour '0' should be '12'
 	minutes = minutes < 10 ? '0'+ minutes : minutes;
 	seconds = seconds < 10 ? '0'+ seconds : seconds;
-	var timeStr = hours + ':' + minutes;
+  var timeStr = 'JOHN';
+  var timeStr2 = 'MILNER';
+
 
 	//account for 2 digit hours
 	var extraDigit = (hours > 9);
-	var leftColumnX = extraDigit ? 0 : 150;
-	var rightColumnX = extraDigit ? 1370 : 1220;
+  //var leftColumnX = extraDigit ? 0 : 150;
+  var leftColumnX = 150;
+  // var rightColumnX = extraDigit ? 1370 : 1220;
+  var rightColumnX = 980;
 
 	//wipe
 	ctx.fillStyle =  'rgba(0, 0, 0, 1)';
 	ctx.fillRect(0,0,CANVAS_W,CANVAS_H);
 	ctx.textBaseline = 'top';
 	ctx.fillStyle = 'rgba(200, 200, 200, 1.0 )'; //text color
-	var topOffset = 80;
+	var topOffset = 280;
 
 	//date
-	if (guiParams.showDate){
-		var day = days[ now.getDay() ];
-		var month = months[ now.getMonth() ];
-		var dayOfMonth = now.getDate();
-		var dateStr = day + ', ' + month + ' ' + dayOfMonth;
-		ctx.font = fontStyle(40,300);
-		ctx.fillText( dateStr, 700, 0);
-	}
+	// if (guiParams.showDate){
+	// 	var day = days[ now.getDay() ];
+	// 	var month = months[ now.getMonth() ];
+	// 	var dayOfMonth = now.getDate();
+	// 	var dateStr = day + ', ' + month + ' ' + dayOfMonth;
+	//ctx.font = fontStyle(40,300);
+	// 	ctx.fillText( dateStr, 700, 0);
+	// }
 
-	if (guiParams.bigSeconds){
-		//big seconds
-		timeStr += ':' + seconds;
-		ctx.font =  fontStyle(350); //fontWeight + '370px' + fontName;
-		ctx.fillText( timeStr, leftColumnX, -50 + topOffset);
-		rightColumnX += extraDigit ? 80 : 180;
+	// if (guiParams.bigSeconds){
+	// 	//big seconds
+	// 	timeStr += ':' + seconds;
+	// 	ctx.font =  fontStyle(350); //fontWeight + '370px' + fontName;
+	// 	ctx.fillText( timeStr, leftColumnX, -50 + topOffset);
+	// 	rightColumnX += extraDigit ? 80 : 180;
 
-	}else{
+	// }else{
 		//big time
-		ctx.font =  fontStyle(500);
-		ctx.fillText( timeStr, leftColumnX, -80 + topOffset);
+		ctx.font =  fontStyle(300, 500);
+    ctx.fillText( timeStr, leftColumnX, -80 + topOffset);
+    ctx.fillText( timeStr2, leftColumnX, -80 + (topOffset + 200));
 		//small seconds
 		ctx.font =  fontStyle(180);
-		ctx.fillText( seconds, rightColumnX, 215 + topOffset);
-	}
+		//ctx.fillText( seconds, rightColumnX, 215 + topOffset);
+	//}
 
 	//am/pm
 	if (guiParams.showPM){
-		ctx.font =  fontStyle(80);
-		ctx.fillText( ampm, rightColumnX, 15 + topOffset);
+		ctx.font =  fontStyle(60);
+    ctx.fillText( ampm, rightColumnX, -35 + topOffset);
+    ctx.fillText( ampm2, rightColumnX, -45 + (topOffset + 60));
+
 	}
 
 	texture.needsUpdate = true;
