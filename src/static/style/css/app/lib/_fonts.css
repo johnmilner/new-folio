@@ -18,7 +18,7 @@
     font-family: GinesoBold;
     font-weight: 400;
     font-style: normal;
-    src: url('../../../../static/media/sou/GinesoBold.woff2') format("woff2"),url('../../../../static/media/sou/GinesoBold.woff') format("woff")
+    src: local('GinesoBold'), url('../../../../static/media/sou/GinesoBold.woff2') format("woff2"),url('../../../../static/media/sou/GinesoBold.woff') format("woff")
   }
 
   @font-face {

@@ -7020,7 +7020,7 @@ function createMouse(){
 	function mouseMove(e) {
 		m.bounds = m.element.getBoundingClientRect();
 		m.x = e.pageX - m.bounds.left - scrollX;
-		m.y = e.pageY - m.bounds.top - scrollX;
+		m.y = e.pageY - m.bounds.top - scrollY;
 		if (e.type === "mousedown") { m.buttonRaw |= bm[e.which - 1] }
 		else if (e.type === "mouseup") { m.buttonRaw &= bm[e.which + 2] }
 		e.preventDefault();
@@ -7123,11 +7123,12 @@ const ih = pool.height = 512;
 const canvas = createCanvas();
 ctx = canvas.ctx;
 
+//const FONT_NAME = 'GinesoBold';
 
-function renderText() {
-
+//function renderText() {
+  
 	  // let ctx = document.querySelector('glcanvas').getContext('2d');
-    // ctx.font = `120px "${FONT_NAME}"`;
+    //c.font = `120px "${FONT_NAME}"`;
     c.font = "120px GinesoBold";
     c.textAlign = "center";
     c.textBaseline = "middle";
@@ -7146,10 +7147,10 @@ function renderText() {
     c.strokeStyle = "black";
     c.strokeText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
     c.fillText("FRONT-END WEB DEVELOPER", iw / 2, (ih / 2) - 76);
-}
+//}
 
-document.fonts.load('120px "GinesoBold"').then(renderText);
-document.fonts.load('50px "GinesoBold"').then(renderText);
+//document.fonts.load('120px "GinesoBold"').then(renderText);
+//document.fonts.load('50px "GinesoBold"').then(renderText);
 
 
 
