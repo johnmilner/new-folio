@@ -57,22 +57,18 @@ function init() {
 
   //init Canvas
   
+  const canvas = document.createElement('canvas');
 
-  //function loadCanvas(id) {
-    const canvas = document.createElement('canvas');
+  canvas.width  = CANVAS_W;
+  canvas.height = CANVAS_H;
+  ctx = canvas.getContext('2d');
 
-    canvas.width  = CANVAS_W;
-    canvas.height = CANVAS_H;
-    ctx = canvas.getContext('2d');
+  const div = document.getElementById('glcanvas-wrap'); 
+  canvas.id     = "glcanvas";
+  canvas.style.zIndex   = 8;
+  canvas.style.position = "absolute";
+  //div.appendChild(canvas)
 
-    const div = document.getElementById('glcanvas-wrap'); 
-    canvas.id     = "glcanvas";
-    canvas.style.zIndex   = 8;
-    canvas.style.position = "absolute";
-    //div.appendChild(canvas)
-// }
-
-//   loadCanvas();
 
 	//three init
 	renderer = new THREE.WebGLRenderer({ antialias: true } );
@@ -120,7 +116,7 @@ function init() {
 	scene.add( directionalLight );
 
 	//controls
-	controls = new THREE.OrbitControls( camera, renderer.domElement );
+  controls = new THREE.OrbitControls( camera, renderer.domElement );
 	controls.minDistance = 100;
 	controls.maxDistance = 5000;
 
