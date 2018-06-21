@@ -207,7 +207,7 @@ function drawText(){
 	//wipe
   	//ctx.fillStyle =  'rgba(0, 0, 0, 1)';
 	//ctx.fillStyle =  'rgba(72, 72, 72, 1)';
-	var lingrad = ctx.createLinearGradient(0,0,0,750);
+	var lingrad = ctx.createLinearGradient(0, 0, 0, 750);
 	lingrad.addColorStop(0, '#ff3000');
 	lingrad.addColorStop(0.25, '#ed0200');
 	lingrad.addColorStop(0.50, '#ff096c');
@@ -239,8 +239,8 @@ function drawText(){
 	// }else{
 		//big time
 		ctx.font =  fontStyle(300, 500);
-    ctx.fillText( timeStr, leftColumnX, -80 + topOffset);
-    ctx.fillText( timeStr2, leftColumnX, -80 + (topOffset + 200));
+    	ctx.fillText( timeStr, leftColumnX, -80 + topOffset);
+    	ctx.fillText( timeStr2, leftColumnX, -80 + (topOffset + 200));
 		//small seconds
 		ctx.font =  fontStyle(180);
 		//ctx.fillText( seconds, rightColumnX, 215 + topOffset);
