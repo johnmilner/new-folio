@@ -99,8 +99,8 @@ function init() {
 		transparent: true,
 		opacity:0,
 		side: THREE.DoubleSide,
-	});
-
+  });
+  
 	planeGeometry = new THREE.PlaneGeometry( CANVAS_W, CANVAS_H , MESH_DIMS, MESH_DIMS );
 	plane = new THREE.Mesh( planeGeometry, material );
 	scene.add( plane );
@@ -205,7 +205,8 @@ function drawText(){
   var rightColumnX = 980;
 
 	//wipe
-	ctx.fillStyle =  'rgba(0, 0, 0, 1)';
+  //ctx.fillStyle =  'rgba(0, 0, 0, 1)';
+  ctx.fillStyle =  'rgba(72, 72, 72, 1)';
 	ctx.fillRect(0,0,CANVAS_W,CANVAS_H);
 	ctx.textBaseline = 'top';
 	ctx.fillStyle = 'rgba(200, 200, 200, 1.0 )'; //text color

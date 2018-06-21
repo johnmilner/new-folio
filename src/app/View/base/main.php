@@ -68,11 +68,11 @@
         </div>
     </div>
         <!-- Script -->
+        <script src="static/js/nanobar.min.js"></script>
         <script src="static/js/three.min.js"></script>
         <script src="static/js/OrbitControls.js"></script>
         <script src="static/js/TweenLite.min.js"></script>
         <script src="static/js/stats.min.js"></script>
-        <!-- <script src="static/js/dat.gui.min.js"></script> -->
         <script src="static/js/ImprovedNoise.js"></script>
         <script type="text/javascript" src="static/js/demo3.js"></script>
         <script type="text/javascript" src="static/js/app.js"></script>

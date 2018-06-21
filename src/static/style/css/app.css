@@ -484,13 +484,33 @@ $grid-width: 114rem;
   }
   
   .spinner {
+  background: url('../../../../../static/media/img/rainbow.gif') 100%;
+  height: 2px;
+}
+  
+  .nanobar {
+  width: 100%;
+  height: 3px;
+  z-index: 9999;
+  top:0
+}
+  
+  .bar {
+  width: 0;
+  height: 100%;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+  background:#484848;
+}
+  
+  /*
+.spinner {
     width: 6rem;
     height: 6rem;
     position: absolute;
     top: calc(50% - 3rem);
     left: calc(50% - 3rem);
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 5000;
     display: none; //script.js calls jquery fade-in for intro animation
     pointer-events: none;
@@ -530,8 +550,7 @@ $grid-width: 114rem;
     font-size: 1.4em;
     top: auto;
     left: -0.12em;
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   
   .ml8 .circle {
@@ -546,7 +565,7 @@ $grid-width: 114rem;
   .ml8 .circle-white {
     width: 3em;
     height: 3em;
-    border: 2px dashed #2998ff;
+    border: 2px dashed $color-tertiary-light;
     border-radius: 2em;
   }
   
@@ -563,10 +582,12 @@ $grid-width: 114rem;
   .ml8 .circle-dark-dashed {
     border-radius: 2.4em;
     background-color: transparent;
-    border: 2px dashed #2998ff;
+    border: 2px dashed $color-tertiary-light;
     width: 2.3em;
     height: 2.3em;
-  }
+  } 
+
+ */
   
   /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
   
@@ -763,7 +784,7 @@ $grid-width: 114rem;
   
   canvas {
   width: 100vw;
-  height: 98vh;
+  height: 95vh;
     /* background: url('../../../../static/media/img/bck-noise.jpg') repeat 0 0; */
 
 }
