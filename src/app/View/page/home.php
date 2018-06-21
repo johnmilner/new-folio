@@ -1,7 +1,3 @@
-            <!-- <div class='loader-mask-0'></div>
-            <div class='loader-mask-1'></div>
-            <div class='loader-mask-2'></div>
-            <div class='loader-mask-3'></div> -->
             <header class="header">
                 <div id="glcanvas-wrap" >
 

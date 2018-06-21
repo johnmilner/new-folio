@@ -35,7 +35,7 @@ Loader.pr.from({el: ".loader-line", p: { y: [100, 100 * t] }, d: 4000, e: "Power
 Loader.run = function() {
 
     Loader.pr.play({cb: intro})
- 
+
 };
 
 console.log('loader.js')
