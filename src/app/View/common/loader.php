@@ -1,4 +1,4 @@
-<div class="spinner">
+<!-- <div class="spinner">
     <h1 class="ml8">
         <span class="letters-container">
             <span class="letters letters-left">Hi</span>
@@ -10,5 +10,6 @@
             <span class="circle circle-dark-dashed"></span>
         </span>
     </h1>
-</div>
+</div> -->
+<div class="spinner"></div>
 

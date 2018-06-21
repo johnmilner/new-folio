@@ -12031,9 +12031,9 @@ var intro = function intro() {
 var Loader = {};
 
 var options = {
-  classname: 'spinner',
-  id: 'my-id',
-  target: document.getElementById('myDivId')
+  classname: 'spinner'
+  //id: 'my-id',
+  //target: document.getElementById('loader')
 };
 
 var nanobar = new Nanobar(options);
@@ -12044,16 +12044,24 @@ Loader.run = function () {
     var preloader = $(".spinner");
     // move bar
     nanobar.go(20);
+    nanobar.go(25);
     nanobar.go(30);
+    nanobar.go(35);
     nanobar.go(40);
+    nanobar.go(45);
     nanobar.go(50);
+    nanobar.go(55);
     nanobar.go(60);
+    nanobar.go(65);
     nanobar.go(70);
+    nanobar.go(75);
     nanobar.go(80);
+    nanobar.go(85);
     nanobar.go(90);
+    nanobar.go(95);
     // size bar 100% and and finish
     nanobar.go(100);
-    preloader.fadeOut(preloaderFadeOutTime, intro);
+    preloader.delay(2300).fadeOut(preloaderFadeOutTime, intro);
   }
   hidePreloader();
 };

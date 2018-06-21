@@ -47,6 +47,12 @@
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" href="./static/style/css/app.css">
+        <style>
+        @font-face {
+            font-family: "FuturaStd-ExtraBold";
+            src: url("./static/media/sou/FuturaStd-ExtraBold.otf");
+        }
+        </style>
         <!-- <link rel="preload" href="./static/style/css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="path/to/mystylesheet.css"></noscript> -->
     </head>

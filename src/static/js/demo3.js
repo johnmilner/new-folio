@@ -91,7 +91,7 @@ function init() {
 	texture.minFilter = texture.magFilter = THREE.LinearFilter;
 
 	material = new THREE.MeshPhongMaterial( {
-		color: 0x666666,
+		color: 0xffffff, //change to brighten scene
 		specular: 0xdddddd,
 		shininess: 20,
 		map: texture,
@@ -114,7 +114,7 @@ function init() {
 	//lights
 	scene.add( new THREE.AmbientLight( 0x666666 ) );
 
-	var light = new THREE.SpotLight( 0xffffff, 0.4);
+	var light = new THREE.SpotLight( 0xffffff, .2);
 	light.position.set( 0, 0, 2000 );
 	scene.add( light );
 
@@ -123,8 +123,8 @@ function init() {
 	scene.add( directionalLight );
 
 	//controls
-  controls = new THREE.OrbitControls( camera, renderer.domElement );
-	controls.minDistance = 100;
+  	controls = new THREE.OrbitControls( camera, renderer.domElement );
+	controls.minDistance = 1000;
 	controls.maxDistance = 5000;
 
 	stats = new Stats();
@@ -199,14 +199,21 @@ function drawText(){
 
 	//account for 2 digit hours
 	var extraDigit = (hours > 9);
-  //var leftColumnX = extraDigit ? 0 : 150;
-  var leftColumnX = 150;
-  // var rightColumnX = extraDigit ? 1370 : 1220;
-  var rightColumnX = 980;
+	//var leftColumnX = extraDigit ? 0 : 150;
+	var leftColumnX = 150;
+	// var rightColumnX = extraDigit ? 1370 : 1220;
+	var rightColumnX = 980;
 
 	//wipe
-  //ctx.fillStyle =  'rgba(0, 0, 0, 1)';
-  ctx.fillStyle =  'rgba(72, 72, 72, 1)';
+  	//ctx.fillStyle =  'rgba(0, 0, 0, 1)';
+	//ctx.fillStyle =  'rgba(72, 72, 72, 1)';
+	var lingrad = ctx.createLinearGradient(0,0,0,750);
+	lingrad.addColorStop(0, '#ff3000');
+	lingrad.addColorStop(0.25, '#ed0200');
+	lingrad.addColorStop(0.50, '#ff096c');
+	lingrad.addColorStop(0.75, '#ff1f44');
+	lingrad.addColorStop(1, '#d50082');
+ 	ctx.fillStyle = lingrad;
 	ctx.fillRect(0,0,CANVAS_W,CANVAS_H);
 	ctx.textBaseline = 'top';
 	ctx.fillStyle = 'rgba(200, 200, 200, 1.0 )'; //text color
