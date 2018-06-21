@@ -58,7 +58,7 @@ a {
 
 .header {
   z-index: 30;
-  
+  transform: scale(1.1);
 }
 
 .glcanvas-wrap {
@@ -215,12 +215,17 @@ canvas {
     }
   }
 
-  .scroll-icon {
+  .scroll-icon-wrap {
     position: absolute;
     top: 90%;
     left: 50%;
     opacity: 0;
     z-index: 7000;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  .scroll-icon {
+    
   }
 
   .scroll-icon {

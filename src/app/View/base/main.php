@@ -74,7 +74,6 @@
         </div>
     </div>
         <!-- Script -->
-        <script src="static/js/nanobar.min.js"></script>
         <script src="static/js/three.min.js"></script>
         <script src="static/js/OrbitControls.js"></script>
         <script src="static/js/TweenLite.min.js"></script>

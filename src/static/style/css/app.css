@@ -686,7 +686,8 @@ $grid-width: 114rem;
   
   .header {
   z-index: 30;
-  
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
   
   .glcanvas-wrap {
@@ -852,12 +853,18 @@ $grid-width: 114rem;
     }
   }
   
-  .scroll-icon {
+  .scroll-icon-wrap {
     position: absolute;
     top: 90%;
     left: 50%;
     opacity: 0;
     z-index: 7000;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  
+  .scroll-icon {
+    
   }
   
   .scroll-icon {

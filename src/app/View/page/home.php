@@ -10,8 +10,10 @@
                             <h1 class="main-headline-r2">John Milner</h1>
                         </div>
                     </div>
-                    <div class="scroll-icon">
-                        <div></div>
+                    <div class="scroll-icon-wrap">
+                        <div class="scroll-icon">
+                            <div></div>
+                        </div>
                     </div>
                 </article>
                 <!-- <div id="h">
