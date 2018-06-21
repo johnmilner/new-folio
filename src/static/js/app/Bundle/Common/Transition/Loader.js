@@ -32,110 +32,21 @@ const intro = function() {
 }
 
 
-// anime.timeline({ loop: false })
-//       .add({
-//         targets: ".ml8 .circle-white",
-//         scale: [0, 3],
-//         opacity: [1, 0],
-//         easing: "easeInOutExpo",
-//         rotateZ: 360,
-//         duration: 1100,
-//         delay: 3000
-//       })
-//       .add({
-//         targets: ".ml8 .circle-container",
-//         scale: [0, 1],
-//         duration: 1100,
-//         easing: "easeInOutExpo",
-//         offset: "-=1000"
-//       })
-//       .add({
-//         targets: ".ml8 .circle-dark",
-//         scale: [0, 1],
-//         duration: 1100,
-//         easing: "easeOutExpo",
-//         offset: "-=600"
-//       })
-//       .add({
-//         targets: ".ml8 .letters-left",
-//         scale: [0, 1],
-//         duration: 1200,
-//         offset: "-=550"
-//       })
-//       .add({
-//         targets: ".ml8 .bang",
-//         scale: [0, 1],
-//         rotateZ: [45, 15],
-//         duration: 1200,
-//         offset: "-=1000"
-//       })
-//       .add({
-//         targets: ".ml8",
-//         opacity: 1,
-//         duration: 2000,
-//         easing: "easeOutExpo",
-//         delay: 300
-//       })
-      
-//     anime({
-//       targets: ".ml8 .circle-dark-dashed",
-//       rotateZ: 360,
-//       duration: 5000,
-//       easing: "linear",
-//       loop: true
-//     });
-
 const Loader = {}
 
-var options = {
-  classname: 'spinner',
-  //id: 'my-id',
-  //target: document.getElementById('loader')
-};
+Loader.pr = new S.Timeline()
+const isObj = S.Is.object(Loader.pr)
+const t = -1
 
-var nanobar = new Nanobar( options );
-
+Loader.pr.from({el: ".loader-line", p: { y: [100, 100 * t] }, d: 2500, e: "Power4InOut"});
 
 
 Loader.run = function() {
-  var preloaderFadeOutTime = 500;
-  function hidePreloader() {
-    var preloader = $(".spinner");
-    // move bar
-    nanobar.go( 20 ); 
-    nanobar.go( 25 );
-    nanobar.go( 30 );
-    nanobar.go( 35 ); 
-    nanobar.go( 40 );
-    nanobar.go( 45 );
-    nanobar.go( 50 ); 
-    nanobar.go( 55 );
-    nanobar.go( 60 ); 
-    nanobar.go( 65 );
-    nanobar.go( 70 );
-    nanobar.go( 75 ); 
-    nanobar.go( 80 ); 
-    nanobar.go( 85 );
-    nanobar.go( 90 );
-    nanobar.go( 95 );
-    // size bar 100% and and finish
-    nanobar.go(100);
-    preloader.delay(2300).fadeOut(preloaderFadeOutTime, intro);
-  }
-  hidePreloader(); 
+
+    Loader.pr.play({cb: intro})
+ 
 };
 
-// Loader.run = function() {
-//     var preloaderFadeOutTime = 2500;
-//     function hidePreloader() {
-//       var preloader = $(".spinner");
-//       preloader.delay(2300).show(); //show preloader - see spinner css
-//       preloader.delay(2300).fadeOut(preloaderFadeOutTime, intro);
-//     }
-//     hidePreloader(); 
-//   };
-
-//Loader.run()
 console.log('loader.js')
 
 

@@ -11,5 +11,7 @@
         </span>
     </h1>
 </div> -->
-<div class="spinner"></div>
+<div id="loader-line-wrap">
+    <div class="loader-line"></div>
+</div>
 
