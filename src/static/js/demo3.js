@@ -114,11 +114,11 @@ function init() {
 	//lights
 	scene.add( new THREE.AmbientLight( 0x666666 ) );
 
-	var light = new THREE.SpotLight( 0xffffff, .2);
+	var light = new THREE.SpotLight( 0xffffff, .075);
 	light.position.set( 0, 0, 2000 );
 	scene.add( light );
 
-	var directionalLight = new THREE.DirectionalLight( 0xdddddd, 1 );
+	var directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
 	directionalLight.position.set( 100, 0, 50 );
 	scene.add( directionalLight );
 
