@@ -35,7 +35,7 @@
 } */
 
 header {
-  background-color: #000;
+  background-color: #26222e;
   margin: 0px;
   overflow: hidden;
 }
@@ -58,7 +58,8 @@ a {
 
 .header {
   z-index: 30;
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 0;
 }
 
 .glcanvas-wrap {
@@ -242,22 +243,4 @@ canvas {
     animation: bounce 2s infinite;
 }
 
-  /* #scroll-wrap {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-image: url('../../../../static/media/img/scroll-down.svg');
-    width: 10rem;
-    height: 10rem;
-  } */
   
-  
-
-

@@ -81,11 +81,13 @@ function init() {
 	renderer = new THREE.WebGLRenderer({ antialias: true } );
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.setClearColor( 0x26222e ); 
 
 	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
 	camera.position.z = 700;
 
 	scene = new THREE.Scene();
+	//scene.background = new THREE.Color( 0x26222e );
 
 	texture = new THREE.Texture(canvas);
 	texture.minFilter = texture.magFilter = THREE.LinearFilter;
@@ -114,11 +116,11 @@ function init() {
 	//lights
 	scene.add( new THREE.AmbientLight( 0x666666 ) );
 
-	var light = new THREE.SpotLight( 0xffffff, .075);
+	var light = new THREE.SpotLight( 0x292a2b, 1);
 	light.position.set( 0, 0, 2000 );
 	scene.add( light );
 
-	var directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+	var directionalLight = new THREE.DirectionalLight( 0xffffff, .5 );
 	directionalLight.position.set( 100, 0, 50 );
 	scene.add( directionalLight );
 
@@ -187,7 +189,7 @@ function drawText(){
 	var minutes = now.getMinutes();
 	var seconds = now.getSeconds();
   // var ampm = hours >= 12 ? 'PM' : 'AM';
-  var ampm = 'WEB';
+  var ampm = 'FRONT-END';
   var ampm2 = 'DEVELOPER';
 	hours = hours % 12;
 	hours = hours ? hours : 12; // the hour '0' should be '12'
@@ -216,7 +218,7 @@ function drawText(){
  	ctx.fillStyle = lingrad;
 	ctx.fillRect(0,0,CANVAS_W,CANVAS_H);
 	ctx.textBaseline = 'top';
-	ctx.fillStyle = 'rgba(200, 200, 200, 1.0 )'; //text color
+	ctx.fillStyle = 'rgba(255, 255, 255, 1.0 )'; //text color
 	var topOffset = 280;
 
 	//date
@@ -249,7 +251,7 @@ function drawText(){
 	//am/pm
 	if (guiParams.showPM){
 		ctx.font =  fontStyle(60);
-    ctx.fillText( ampm, (rightColumnX + 95), -35 + (topOffset + 70));
+    ctx.fillText( ampm, (rightColumnX + 90), -35 + (topOffset + 70));
     ctx.fillText( ampm2, (rightColumnX + 90), -45 + (topOffset + 130));
 
 	}

@@ -17,7 +17,7 @@ html {
 #body-content-wrapper {
   position: relative;
   box-shadow: 0 4px 2px -2px rgba(255,255,255,0.2);
-  background-color: rgba(52,52,52,0.9);
+  background-color: #292a2b;
   height: 100%;
   max-width: 100%;
   z-index: 1;
