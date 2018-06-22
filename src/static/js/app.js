@@ -11954,7 +11954,7 @@ var intro = function intro() {
   var isObj = skylake.Is.object(tl);
 
   tl.from({ el: '#sail', p: { x: [0, 100] }, d: 1500, e: 'Power4InOut' });
-  tl.from({ el: '.header', p: { opacity: [0, 1], scale: [1.2, 1] }, d: 750, delay: 750, e: 'Power3In' });
+  tl.from({ el: '.header', p: { scale: [1.2, 1] }, d: 1800, delay: 250, e: 'Power3In' });
   //tl.from({el: '.tagline', p: {y: [100, 0]}, d: 1600, e: 'Power4InOut'})
   tl.from({ el: '#burger-border-wrap', p: { opacity: [0, .6] }, d: 1500, e: 'ExpoOut', delay: 200 });
   tl.from({ el: '.burger-line-hover', p: { x: [105, 0] }, d: 1000, e: 'ExpoOut', delay: 500 });

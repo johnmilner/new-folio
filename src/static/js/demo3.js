@@ -81,7 +81,7 @@ function init() {
 	renderer = new THREE.WebGLRenderer({ antialias: true } );
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
-	renderer.setClearColor( 0x26222e ); 
+	renderer.setClearColor( 0x090909 ); 
 
 	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
 	camera.position.z = 700;
@@ -120,8 +120,8 @@ function init() {
 	light.position.set( 0, 0, 2000 );
 	scene.add( light );
 
-	var directionalLight = new THREE.DirectionalLight( 0xffffff, .5 );
-	directionalLight.position.set( 100, 0, 50 );
+	var directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+	directionalLight.position.set( 200, 0, 50 );
 	scene.add( directionalLight );
 
 	//controls

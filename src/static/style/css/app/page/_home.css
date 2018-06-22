@@ -59,7 +59,6 @@ a {
 .header {
   z-index: 30;
   transform: scale(1.2);
-  opacity: 0;
 }
 
 .glcanvas-wrap {

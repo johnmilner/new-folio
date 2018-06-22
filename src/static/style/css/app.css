@@ -164,7 +164,7 @@ $grid-width: 114rem;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #4bffd4;
+    background: #26222e;
     -webkit-transform: translate3d(0,0%,0);
             transform: translate3d(0,0%,0);
     opacity: 1;
@@ -688,7 +688,6 @@ $grid-width: 114rem;
   z-index: 30;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 0;
 }
   
   .glcanvas-wrap {
