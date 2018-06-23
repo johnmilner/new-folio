@@ -189,7 +189,7 @@ function drawText(){
 	var minutes = now.getMinutes();
 	var seconds = now.getSeconds();
   // var ampm = hours >= 12 ? 'PM' : 'AM';
-  var ampm = 'FRONT-END';
+  var ampm = 'CREATIVE';
   var ampm2 = 'DEVELOPER';
 	hours = hours % 12;
 	hours = hours ? hours : 12; // the hour '0' should be '12'

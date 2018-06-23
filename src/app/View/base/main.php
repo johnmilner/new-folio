@@ -52,6 +52,14 @@
             font-family: "FuturaStd-ExtraBold";
             src: url("./static/media/sou/FuturaStd-ExtraBold.otf");
         }
+        @font-face {
+            font-family: "DrukText-Bold";
+            src: url("./static/media/sou/DrukText-Bold.otf");
+        }
+        @font-face {
+            font-family: "Druk-Heavy";
+            src: url("./static/media/sou/Druk-Heavy.otf");
+        }
         </style>
         <!-- <link rel="preload" href="./static/style/css/app.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="path/to/mystylesheet.css"></noscript> -->

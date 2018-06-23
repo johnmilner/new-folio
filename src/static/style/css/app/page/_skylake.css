@@ -17,7 +17,8 @@ html {
 #body-content-wrapper {
   position: relative;
   box-shadow: 0 4px 2px -2px rgba(255,255,255,0.2);
-  background-color: #292a2b;
+  /* background-color: #292a2b; */
+  background-color: #1b1b1b;
   height: 100%;
   max-width: 100%;
   z-index: 1;
@@ -3413,7 +3414,7 @@ svg:not(:root) {
 }
 
 .h-img-wrap {
-  position: absolute;
+  /* position: absolute;
   z-index: -1;
   display: -ms-flexbox;
   display: flex;
@@ -3422,7 +3423,13 @@ svg:not(:root) {
   -ms-flex-pack: center;
   justify-content: center;
   background-size: cover;
-  background-position: 50%;
+  background-position: 50%; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1; 
   opacity: .2;
 }
 
@@ -3433,7 +3440,7 @@ svg:not(:root) {
 
 #h-img-wrap-0 {
   /* bottom: -11vw; */
-  left: 40vw;
+  /* left: 40vw; */
   /* transform: translate3d(0, -46%, 0); */
 }
 
