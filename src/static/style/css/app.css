@@ -164,7 +164,7 @@ $grid-width: 114rem;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #26222e;
+    background: #1a1c1e;
     -webkit-transform: translate3d(0,0%,0);
             transform: translate3d(0,0%,0);
     opacity: 1;
@@ -704,6 +704,7 @@ $grid-width: 114rem;
   canvas {
   width: 100vw;
   height: 95vh;
+  margin-bottom: -3px;
 
 }
   

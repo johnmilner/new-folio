@@ -71,6 +71,7 @@ a {
 canvas {
   width: 100vw;
   height: 95vh;
+  margin-bottom: -3px;
 
 }
 

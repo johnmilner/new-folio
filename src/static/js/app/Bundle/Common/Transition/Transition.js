@@ -285,6 +285,7 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
 
         
         Transition.headerDown.from({el: '.header', p: {y: [-100, 0]}, d: 800, e: 'Power4InOut'})
+        Transition.headerDown.from({el: '.scroll-icon-wrap', p: {opacity: [0, 1], y: [100, 0]}, d: 1500, e: 'Power4InOut', delay: 900})
 
         Transition.headerDown.from({el: Transition.arrBotTitle[0], p: {y: [0, 100]}, d: 600, e: 'Power4InOut'})
         Transition.headerDown.from({el: Transition.arrBotTitle[1], p: {y: [0, 100]}, d: 600, e: 'Power4InOut'})
