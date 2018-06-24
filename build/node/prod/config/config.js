@@ -4,13 +4,13 @@ module.exports = {
     compiler: {
         css: {
             entry: 'static/style/css/main.css',
-            dest: 'static/style/css/app.css',
+            dest:  'static/style/css/app.css',
             autoprefixer: ['last 2 versions']
         },
         js: {
             entry: 'static/js/main.js',
-            dest: 'static/js/app.js',
-            eslint: 'build/node/common/config/.eslintrc'
+            dest:  'static/js/app.js'
+            //eslint: 'build/node/common/config/.eslintrc'
         }
     },
     minify: {

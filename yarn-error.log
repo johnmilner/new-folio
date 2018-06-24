@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/local/bin/yarn run dev
+  /usr/bin/node /usr/local/bin/yarn run prod
 
 PATH: 
   /home/johnio/bin:/home/johnio/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
@@ -4153,7 +4153,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c node build/node/dev/index.js
+  Arguments: -c bash build/bash/prod.sh
   Directory: /home/johnio/Dropbox/Websites/Sites-Johnnycat/dev/newfolio.dev
   Output:
   

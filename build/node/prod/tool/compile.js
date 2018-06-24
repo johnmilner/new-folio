@@ -14,7 +14,7 @@ module.exports = callback => {
         rollup({
             entry: config.src + config.compiler.js.entry,
             dest: config.src + config.compiler.js.dest,
-            eslint: config.compiler.js.eslint,
+            //eslint: config.compiler.js.eslint,
             callback: callback
         })
     }

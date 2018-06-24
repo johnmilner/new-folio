@@ -37,7 +37,7 @@ function compileJs () {
     rollup({
         entry: config.js.entry,
         dest: config.js.dest,
-        eslint: config.js.eslint,
+        //eslint: config.js.eslint,
         callback: reloadJs
     })
 }

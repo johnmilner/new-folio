@@ -10,7 +10,7 @@ module.exports = {
             './src/static/js/lib/**/*.js',
             './src/static/js/main.js'
         ],
-        eslint: 'build/node/common/config/.eslintrc'
+        //eslint: 'build/node/common/config/.eslintrc'
     },
     css: {
         entry: 'src/static/style/css/main.css',
