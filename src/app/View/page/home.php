@@ -1,4 +1,4 @@
-            <header class="header">
+<header class="header">
                 <div id="glcanvas-wrap" >
 
                 </div>
@@ -173,35 +173,31 @@
                 
             <div id="h-case">
                 <div id="h-client-wrap" class="oh">
-                    <div id="h-client-0" class="h-client">FACEBOOK</div>
-                    <div id="h-client-1" class="h-client">KLM</div>
-                    <div id="h-client-2" class="h-client">ADIDAS</div>
-                    <div id="h-client-3" class="h-client">McDONALD'S</div>&nbsp;</div>
+                    <div id="h-client-0" class="h-client">REACT</div>
+                    <div id="h-client-1" class="h-client">VANILLA JAVASCRIPT</div>
+                    <div id="h-client-2" class="h-client">VANILLA JAVSCRIPT</div>
+                    <div id="h-client-3" class="h-client">REACT</div>&nbsp;</div>
                 <div id="h-txt">
                     <div id="h-txt-desc-line-container">
                         <div id="h-txt-desc-line-wrap" class="oh">
                             <div id="h-txt-desc-line"></div>
                         </div>
                         <div id="h-txt-title-wrap" class="oh">
-                            <div class="h-txt-title">Internet.org</div>
-                            <div class="h-txt-title">Bluey</div>
-                            <div class="h-txt-title">Predator</div>
-                            <div class="h-txt-title">McDonald's App</div>&nbsp;</div>
+                            <div class="h-txt-title">Robofriends</div>
+                            <div class="h-txt-title">Pig Dice Game</div>
+                            <div class="h-txt-title">Natours Travel Site</div>
+                            <div class="h-txt-title">Face App</div>&nbsp;</div>
                         <div class="h-text-desc-txt-wrap oh">
-                            <p class="h-txt-desc-txt">Internet.org is a Facebook-led initiative with the goal of bringing internet access and it’s benefits to the 2/3 of the world without access. Together with Fantasy, I did visual explorations to tell their story and vision of
-                                connectivity, through real-life stories.</p>
+                            <p class="h-txt-desc-txt">Built with React. Bacon ipsum dolor amet tail meatloaf turducken bresaola, picanha ham hock salami pork t-bone pig doner ground round porchetta boudin. Porchetta filet mignon tongue kielbasa ground round shoulder short loin tail turducken ball tip. </p>
                         </div>
                         <div class="h-text-desc-txt-wrap oh">
-                            <p class="h-txt-desc-txt">I art directed a short animation film for kids about KLM’s mascot. This film is the first one in a series of animation films about the little plane Bluey. “Bluey and the Flower Parade” can be seen on all intercontinental KLM
-                                flights and KLM’s YouTube channel.</p>
+                            <p class="h-txt-desc-txt">Built with Javascript, HTML5 and CSS3. Bacon ipsum dolor amet tail meatloaf turducken bresaola, picanha ham hock salami pork t-bone pig doner ground round porchetta boudin. Porchetta filet mignon tongue kielbasa ground round shoulder short loin tail turducken ball tip. </p>
                         </div>
                         <div class="h-text-desc-txt-wrap oh">
-                            <p class="h-txt-desc-txt">To celebrate the 20th anniversary of one of the most iconic football boots ever, adidas created 14 brand-new Predator shoes. I designed the site, bringing the user eye-to-eye with each predator and their connection with it’s
-                                specially designed boot.</p>
+                            <p class="h-txt-desc-txt">Built with Javascript, HTML5 and CSS3. Bacon ipsum dolor amet tail meatloaf turducken bresaola, picanha ham hock salami pork t-bone pig doner ground round porchetta boudin. Porchetta filet mignon tongue kielbasa ground round shoulder short loin tail turducken ball tip. </p>
                         </div>
                         <div class="h-text-desc-txt-wrap oh">
-                            <p class="h-txt-desc-txt">Turned McDonald’s Netherlands app into a rich, personalised user experience. Enabling rewards, loyalty and geo-targeted offers with fun UI animations. With great team effort we managed to design and develop this app within
-                                2-3 months.</p>
+                            <p class="h-txt-desc-txt">Built with React. Bacon ipsum dolor amet tail meatloaf turducken bresaola, picanha ham hock salami pork t-bone pig doner ground round porchetta boudin. Porchetta filet mignon tongue kielbasa ground round shoulder short loin tail turducken ball tip. </p>
                         </div>
                     </div>
                 </div>
@@ -210,30 +206,30 @@
                         <div class="h-bottom-title">ROLE</div>
                     </div>
                     <div class="h-bottom-value-wrap oh">
-                        <div class="h-bottom-value h-bottom-value-r">Designer</div>
-                        <div class="h-bottom-value h-bottom-value-r">Art Director</div>
-                        <div class="h-bottom-value h-bottom-value-r">Lead Designer</div>
-                        <div class="h-bottom-value h-bottom-value-r">Lead Designer</div>&nbsp;</div>
+                        <div class="h-bottom-value h-bottom-value-r">Developer</div>
+                        <div class="h-bottom-value h-bottom-value-r">Developer</div>
+                        <div class="h-bottom-value h-bottom-value-r">Developer</div>
+                        <div class="h-bottom-value h-bottom-value-r">Developer</div>&nbsp;</div>
                 </div>
                 <div id="h-agency">
                     <div class="oh">
-                        <div class="h-bottom-title">AGENCY</div>
+                        <div class="h-bottom-title">PROJECT</div>
                     </div>
                     <div class="h-bottom-value-wrap oh">
-                        <div class="h-bottom-value h-bottom-value-a">Fantasy</div>
-                        <div class="h-bottom-value h-bottom-value-a">DDB &amp; Tribal</div>
-                        <div class="h-bottom-value h-bottom-value-a">DDB &amp; Tribal</div>
-                        <div class="h-bottom-value h-bottom-value-a">DDB &amp; Tribal</div>&nbsp;</div>
+                        <div class="h-bottom-value h-bottom-value-a">Self-Initiated</div>
+                        <div class="h-bottom-value h-bottom-value-a">Self-Initiated</div>
+                        <div class="h-bottom-value h-bottom-value-a">Self-Initiated</div>
+                        <div class="h-bottom-value h-bottom-value-a">Self-Initiated</div>&nbsp;</div>
                 </div>
                 <div id="h-year">
                     <div class="oh">
                         <div class="h-bottom-title">YEAR</div>
                     </div>
                     <div class="h-bottom-value-wrap oh">
-                        <div class="h-bottom-value h-bottom-value-y">2015</div>
-                        <div class="h-bottom-value h-bottom-value-y">2015</div>
-                        <div class="h-bottom-value h-bottom-value-y">2014</div>
-                        <div class="h-bottom-value h-bottom-value-y">2013</div>&nbsp;</div>
+                        <div class="h-bottom-value h-bottom-value-y">2018</div>
+                        <div class="h-bottom-value h-bottom-value-y">2017</div>
+                        <div class="h-bottom-value h-bottom-value-y">2017</div>
+                        <div class="h-bottom-value h-bottom-value-y">2018</div>&nbsp;</div>
                 </div>
                 <div id="h-btn-container" class="oh">
                     <div id="h-btn-wrap" class="oh">
@@ -250,7 +246,14 @@
             <div id="h-img-wrap-2" class="h-img-wrap"><img id="h-img-2" class="h-img" src="/static/media/img/home/case/img-2.jpg" alt=""></div>
             <div id="h-img-wrap-3" class="h-img-wrap"><img id="h-img-3" class="h-img" src="/static/media/img/home/case/img-3.jpg" alt=""></div>
             </div>
-        <div id="h-resume" class="oh">
+        <div class="h-resume" class="oh">
+        <!-- <div class="bg-video"> -->
+              <video class="h-resume__content" autoplay muted loop>
+                <source src="/static/media/vid/love-coding.mp4" type="video/mp4">
+                <source src="/static/media/vid/love-coding.webm" type="video/webm">
+                Your browser is not supported! 
+              </video>
+        <!-- </div> -->
         <div class="page-content">
                     <div class='header-container'>
                         <header class='header-icons'>

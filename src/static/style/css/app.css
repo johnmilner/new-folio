@@ -945,6 +945,7 @@ a:hover {
   
   p {
   margin: 0 auto;
+  font-family: 'Georgia', sans-serif;
 }
   
   /* Hide the overflow in IE. */
@@ -4341,7 +4342,8 @@ a:hover {
   bottom: calc(9px + 1.9vw);
   left: -3px;
   width: 41.66vw;
-  font-family: GinesoBold;
+  font-family: FuturaStd-ExtraBold;
+  text-transform: uppercase;
   line-height: 120%;
   letter-spacing: -1px;
   font-size: calc(1.1rem + 4.24vw);
@@ -4351,7 +4353,7 @@ a:hover {
   
   .h-txt-title {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
