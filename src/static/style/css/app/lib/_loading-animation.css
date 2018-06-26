@@ -1,25 +1,19 @@
 #loader-line-wrap {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  left: 0%;
-  width: 30px;
+  opacity: 1;
   z-index: 5000;
+  transform: translate3d(0%, 0, 0);
+
 }
 
 .loader-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: -webkit-linear-gradient(
-    -90deg,
-    #ff3000,
-    #ed0200,
-    #ff096c,
-    #d50082
-  );
-  opacity: 1;
-  transform: translate3d(0, 100%, 0);
+  height: 100vh;
+  background: -webkit-linear-gradient( 45deg, #ff3000, #ed0200, #ff096c, #ff1f44, #d50082 );
+  /* background-image: linear-gradient(to right top, #91e6c7, #65dbd5, #3dcee3, #33bfee, #55acef); */
+  transform: translate3d(-100%, 0, 0);
+  /* transform: translate3d(0%, 0, 0); */
 }
