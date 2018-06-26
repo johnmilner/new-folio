@@ -8,7 +8,8 @@ const intro = function() {
   const isObj = S.Is.object(tl)
 
   tl.from({el: "#loader-line-wrap", p: { y: [0, 100]}, d: 1500, e: 'Power4InOut'});
-  tl.from({el: '#sail', p: {y: [0, 100]}, d: 1500, e: 'Power4InOut'})
+  tl.from({el: '#sail-top', p: {y: [0, -100]}, d: 1500, e: 'Power4InOut'})
+  tl.from({el: '#sail-bot', p: {y: [0, 100]}, d: 1500, e: 'Power4InOut'})
   tl.from({el: '.header', p: {scale: [1.2, 1]}, d: 1800, delay: 250, e: 'Power3In'})
   //tl.from({el: '.tagline', p: {y: [100, 0]}, d: 1600, e: 'Power4InOut'})
   tl.from({el: '#burger-border-wrap', p: {opacity: [0, .6]}, d: 1500, e: 'ExpoOut', delay: 200})

@@ -157,14 +157,27 @@ $grid-width: 114rem;
     overflow: hidden;
 } */
   
-  #sail {
+  #sail-top {
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #cccccc;
+    height: 50vh;
+    width: 100vw;
+    background: #1a1c1e;
+    -webkit-transform: translate3d(0,0%,0);
+            transform: translate3d(0,0%,0);
+    opacity: 1;
+}
+  
+  #sail-bot {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background: #1a1c1e;
     -webkit-transform: translate3d(0,0%,0);
             transform: translate3d(0,0%,0);
     opacity: 1;
@@ -485,7 +498,7 @@ $grid-width: 114rem;
   
   #loader-line-wrap {
   position: fixed;
-  top: 0;
+  top: 50%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -497,7 +510,7 @@ $grid-width: 114rem;
 }
   
   .loader-line {
-  height: 100vh;
+  height: 5px;
   background: -webkit-linear-gradient( 45deg, #ff3000, #ed0200, #ff096c, #ff1f44, #d50082 );
   /* background-image: linear-gradient(to right top, #91e6c7, #65dbd5, #3dcee3, #33bfee, #55acef); */
   -webkit-transform: translate3d(-100%, 0, 0);

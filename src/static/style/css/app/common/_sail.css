@@ -1,12 +1,23 @@
 
-#sail {
+#sail-top {
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #cccccc;
+    height: 50vh;
+    width: 100vw;
+    background: #1a1c1e;
+    transform: translate3d(0,0%,0);
+    opacity: 1;
+}
+#sail-bot {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background: #1a1c1e;
     transform: translate3d(0,0%,0);
     opacity: 1;
 }
