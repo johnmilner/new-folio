@@ -95,7 +95,7 @@ function init() {
 	material = new THREE.MeshPhongMaterial( {
 		color: 0xffffff, //change to brighten scene
 		specular: 0xdddddd,
-		shininess: 20,
+		shininess: 40,
 		map: texture,
 		specularMap: texture, //only shine on white text
 		transparent: true,

@@ -2151,7 +2151,7 @@ svg:not(:root) {
 #h-pagi-line {
   left: 0;
   right: 0;
-  background: rgb(25, 25, 25);
+  background: rgba(255, 255, 255, .2);
   transform: translate3d(-130%, 0, 0);
 }
 
@@ -2197,13 +2197,13 @@ svg:not(:root) {
 }
 
 .h-pagi-top-no {
-  color: rgba(12, 12, 12, .3);
+  color: rgba(255, 255, 255, .3);
   opacity: 1;
 }
 
 #h-pagi-bottom-marker {
   transform: translate3d(0, 100%, 0);
-  color: rgba(12, 12, 12, .3);
+  color: rgba(255, 255, 255, .3);
 }
 
 #h-pagi-bottom {
@@ -3148,15 +3148,15 @@ svg:not(:root) {
 }
 
 #h-client-1 {
-  color: #00a1de;
+  color: #ff5454;
 }
 
 #h-client-2 {
-  color: #eb1c3b;
+  color: #40a171;
 }
 
 #h-client-3 {
-  color: #148b1f;
+  color: #7fc0fd;
 }
 
 #h-txt {
