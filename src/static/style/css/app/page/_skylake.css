@@ -2136,7 +2136,8 @@ svg:not(:root) {
 }
 
 #h-pagi-line-wrap {
-  width: 50px;
+  width: 116px;
+  transform: translate3d(18px, -40px, 0) rotate(-90deg);
 }
 
 #h-pagi-line,
@@ -2144,15 +2145,13 @@ svg:not(:root) {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 20px !important;
-  width: 80px !important;
+  left: -10px !important;
 }
 
 #h-pagi-line {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, .2);
-  transform: translate3d(-130%, 0, 0);
 }
 
 #h-pagi-top {
