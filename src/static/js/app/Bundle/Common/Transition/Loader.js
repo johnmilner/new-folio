@@ -7,8 +7,8 @@ const intro = function() {
   const tl = new S.Timeline()
   const isObj = S.Is.object(tl)
 
-  tl.from({el: "#loader-line-wrap", p: { x: [0, 100]}, d: 400, e: 'Power4InOut'});
-  tl.from({el: '#sail-top', p: {y: [0, -100]}, d: 1500, delay: 400, e: 'Power4InOut'})
+  tl.from({el: "#loader-line-wrap", p: { opacity: [1, 0]}, d: 400, e: 'Power4InOut'});
+  tl.from({el: '#sail-top', p: {y: [0, -100]}, d: 1500, e: 'Power4InOut'})
   tl.from({el: '#sail-bot', p: {y: [0, 100]}, d: 1500, e: 'Power4InOut'})
   tl.from({el: '.header', p: {scale: [1.2, 1]}, d: 1800, delay: 250, e: 'Power3In'})
   //tl.from({el: '.tagline', p: {y: [100, 0]}, d: 1600, e: 'Power4InOut'})
