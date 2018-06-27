@@ -2205,11 +2205,10 @@ svg:not(:root) {
 }
 
 #h-pagi-bottom-marker {
-  transform: translate3d(0, 100%, 0);
   color: rgba(255, 255, 255, .3);
   right: 40px !important;
   bottom: 5vw !important;
-  transform: rotate(-90deg) !important;
+  transform: translate3d(0, 100%, 0);
 }
 
 #h-pagi-bottom {
@@ -2242,8 +2241,8 @@ svg:not(:root) {
 #h-pagi-bottom-marker-wrap {
   position: absolute;
   top: -145px;  
-  width: 81px;
-  transform: translate3d(0, 0, 0);
+  width: 40px;
+  transform: rotate(-90deg);
 }
 
 .h-pagi-bottom-title-wrap {
@@ -5125,7 +5124,7 @@ svg:not(:root) {
   #h-pagi-bottom-marker-wrap,
   #h-pagi-line-wrap,
   #h-pagi-social-wrap {
-    left: 29px;
+    left: 48px;
   }
 
   #h-client-wrap {

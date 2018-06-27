@@ -10857,7 +10857,7 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
 
         textInit.from({ el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: { y: [-100, 0] }, d: 2800, e: 'Power4InOut' });
 
-        textInit.from({ el: '#h-pagi-line', p: { x: [-130, 0] }, d: 2000, e: 'Power4InOut' });
+        //textInit.from({el: '#h-pagi-line', p: {x: [-130, 0]}, d: 2000, e: 'Power4InOut'})
         textInit.from({ el: '#h-pagi-bottom-marker', p: { y: [100, 0] }, d: 2800, e: 'Power4InOut' });
 
         textInit.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [0, 1], y: [-60, 0] }, d: 1200, delay: 400, e: 'Power4InOut' });
