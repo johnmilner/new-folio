@@ -2137,7 +2137,7 @@ svg:not(:root) {
 
 #h-pagi-line-wrap {
   width: 116px;
-  transform: translate3d(18px, -40px, 0) rotate(-90deg);
+  transform: translate3d(17.5px, -46px, 0) rotate(-90deg);
 }
 
 #h-pagi-line,
@@ -2176,7 +2176,7 @@ svg:not(:root) {
 
 .h-pagi-top-no-wrap {
   margin: auto;
-  width: 81px;
+  width: 18px;
   transform: rotate(-90deg) !important;
   
 }
