@@ -4416,23 +4416,23 @@ a:hover {
 }
   
   #h-role {
-  left: 8.33vw;
+  left: 41vw;
 }
   
   #h-agency,
 #h-role {
   position: absolute;
-  bottom: 7.8vw;
+  top: 3.8vw;
 }
   
   #h-agency {
-  left: 16.66vw;
+  left: 49.555vw;
 }
   
   #h-year {
   position: absolute;
-  bottom: 7.8vw;
-  left: 25vw;
+  top: 3.8vw;
+  left: 58vw;
 }
   
   #h-btn-container {
