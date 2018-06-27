@@ -3172,7 +3172,8 @@ svg:not(:root) {
 
 #h-txt-desc-line-wrap {
   position: absolute;
-  top: 0;
+  top: 62px;
+  left: 25vw;
   width: 6.77vw;
   height: 4px;
 }
@@ -3190,8 +3191,8 @@ svg:not(:root) {
 
 #h-txt-title-wrap {
   position: absolute;
-  bottom: calc(9px + 1.9vw);
-  left: -3px;
+  bottom: calc(15px + -2.1vw);
+  left: 499px;
   width: 41.66vw;
   font-family: FuturaStd-ExtraBold;
   text-transform: uppercase;
@@ -3214,8 +3215,8 @@ svg:not(:root) {
 
 .h-text-desc-txt-wrap {
   position: absolute;
-  top: calc(-5px - 0.55vw);
-  left: 8.33vw;
+  top: calc(2px - -3.45vw);
+  left: 32.33vw;
   width: 33.33vw;
 }
 
