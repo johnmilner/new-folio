@@ -4603,14 +4603,16 @@ a:hover {
   width: 100%;
   height: 100%;
   top: 0px;
-  left: 0px;
-  z-index: -1; 
+  left: -745px;
+  z-index: -1;
   opacity: .12;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
   
   .h-img {
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(-60%, 0, 0);
+          transform: translate3d(-60%, 0, 0);
   opacity: 0;
 }
   
