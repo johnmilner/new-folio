@@ -5121,8 +5121,11 @@ svg:not(:root) {
   }
 
   #h-client-wrap {
-    top: 57px;
-    left: calc(2.1vw + 70px);
+    /* top: 57px;
+    left: calc(2.1vw + 70px); */
+    top: -44px;
+    left: -172px;
+    transform: rotate(-90deg);
   }
 
   .h-client {
