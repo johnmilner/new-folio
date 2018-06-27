@@ -3216,7 +3216,7 @@ svg:not(:root) {
 .h-text-desc-txt-wrap {
   position: absolute;
   top: calc(2px - -3.45vw);
-  left: 32.33vw;
+  left: 32.55vw;
   width: 33.33vw;
 }
 
@@ -3267,7 +3267,7 @@ svg:not(:root) {
 #h-agency,
 #h-role {
   position: absolute;
-  top: 3.8vw;
+  top: 4.155vw;
 }
 
 #h-agency {
@@ -3276,7 +3276,7 @@ svg:not(:root) {
 
 #h-year {
   position: absolute;
-  top: 3.8vw;
+  top: 4.155vw;
   left: 58vw;
 }
 

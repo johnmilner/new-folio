@@ -4368,7 +4368,7 @@ a:hover {
   .h-text-desc-txt-wrap {
   position: absolute;
   top: calc(2px - -3.45vw);
-  left: 32.33vw;
+  left: 32.55vw;
   width: 33.33vw;
 }
   
@@ -4422,7 +4422,7 @@ a:hover {
   #h-agency,
 #h-role {
   position: absolute;
-  top: 3.8vw;
+  top: 4.155vw;
 }
   
   #h-agency {
@@ -4431,7 +4431,7 @@ a:hover {
   
   #h-year {
   position: absolute;
-  top: 3.8vw;
+  top: 4.155vw;
   left: 58vw;
 }
   
