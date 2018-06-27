@@ -3236,12 +3236,12 @@ a:hover {
   #h-pagi-line-container {
   position: absolute;
   z-index: 3;
-  top: 50%;
-  right: 5%;
+  top: 62%;
+  right: 0%;
   height: 1px;
   text-align: center;
   font-family: trump-gothic-pro;
-  font-size: calc(1rem + 17.2vw);
+  font-size: calc(1rem + 1.2vw);
 }
   
   #h-pagi-line-wrap {
@@ -3276,6 +3276,7 @@ a:hover {
   bottom: -28px;
   left: 0;
   width: 100%;
+
 }
   
   .h-pagi-top-no-wrap,
@@ -3286,6 +3287,9 @@ a:hover {
   .h-pagi-top-no-wrap {
   margin: auto;
   width: 81px;
+  -webkit-transform: rotate(-90deg) !important;
+          transform: rotate(-90deg) !important;
+  
 }
   
   .h-pagi-top-title-wrap {
@@ -3316,6 +3320,10 @@ a:hover {
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   color: rgba(255, 255, 255, .3);
+  right: 40px !important;
+  bottom: 5vw !important;
+  -webkit-transform: rotate(-90deg) !important;
+          transform: rotate(-90deg) !important;
 }
   
   #h-pagi-bottom {
@@ -3347,7 +3355,7 @@ a:hover {
   
   #h-pagi-bottom-marker-wrap {
   position: absolute;
-  top: 0;
+  top: -145px;  
   width: 81px;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
