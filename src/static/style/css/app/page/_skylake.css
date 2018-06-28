@@ -3509,11 +3509,9 @@ svg:not(:root) {
   width: 100%;
   height: 100%;
   top: 0px;
-  left: -745px;
   z-index: -1;
   opacity: .12;
-  transform: rotate(-90deg);
-}
+  transform: translateX(-42%) rotate(-90deg);}
 
 
 .h-img {

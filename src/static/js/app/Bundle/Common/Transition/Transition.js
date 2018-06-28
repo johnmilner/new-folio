@@ -559,7 +559,7 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
     }
 
     Transition.updateProgress = function(num1) {
-        var percent = Math.ceil( num1 * 100 / 6 ) + '%';
+        var percent = Math.ceil( num1 * 100 / 5 ) + '%';
         document.getElementById('progress').style.width = percent;
     }
 

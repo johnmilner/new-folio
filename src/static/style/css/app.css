@@ -4689,12 +4689,10 @@ a:hover {
   width: 100%;
   height: 100%;
   top: 0px;
-  left: -745px;
   z-index: -1;
   opacity: .12;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
+  -webkit-transform: translateX(-42%) rotate(-90deg);
+          transform: translateX(-42%) rotate(-90deg);}
   
   .h-img {
   -webkit-transform: translate3d(-60%, 0, 0);
