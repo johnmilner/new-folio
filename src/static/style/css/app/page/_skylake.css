@@ -3427,7 +3427,7 @@ svg:not(:root) {
     z-index: -1;
     position: absolute;
     overflow: hidden; 
-
+    transform: translate3d(-100%, 0, 0);
  }
 
  #gloss-overlay:before {
@@ -3454,24 +3454,35 @@ svg:not(:root) {
     width: 21vw;
     background: rgba(27, 27, 27, .2);
     z-index: 0;
+    transform: translate3d(0, 100%, 0);
  }
 
 .h-pagi-prog-no-wrap {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  z-index: 0;
+  top: 10%;
+  left: 17%;
+  /* height: 1px; */
+  text-align: center;
+  font-family: trump-gothic-pro;
+  font-size: calc(1rem + 4.2vw);
+  color: white;
 
 }
 
 .h-pagi-prog-no {
-  
+  transform: translate3d(0, 100%, 0);
+}
+
+#h-prog-container {
+  padding: 30px 30px;
 }
 
 .progress-container{
   position: absolute;
   bottom: 50%;
-  left: 0;
-  width: 100%;
+  left: 45%;
+  width: 60%;
   height: 4px;
   background: gray;
 }
