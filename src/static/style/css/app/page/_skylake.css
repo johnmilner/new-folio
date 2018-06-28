@@ -3453,7 +3453,7 @@ svg:not(:root) {
     left: 14.5vw;
     height: 13vh;
     width: 21vw;
-    background: rgba(27, 27, 27, .2);
+    background: rgba(27, 27, 27, 1);
     z-index: 0;
     transform: translate3d(0, 100%, 0);
  }
@@ -3463,7 +3463,7 @@ svg:not(:root) {
   z-index: 0;
   height: 100%;
   width: 100%;
-  top: 6%;
+  top: 8%;
   left: 5%;
   /* text-align: center; */
   font-family: trump-gothic-pro;
@@ -3482,14 +3482,15 @@ svg:not(:root) {
 
 .progress-container{
   position: absolute;
-  bottom: 50%;
-  left: 35%;
+  bottom: 45%;
+  left: 36%;
   width: 50%;
-  height: 4px;
+  height: 3.5px;
   background: gray;
+  border-radius: 5px;
 }
 .progress{
-  height: 4px;
+  height: 3.5px;
   /* background: red; */
   background: -webkit-linear-gradient( 45deg, #0278d8, #ed0200, #ff096c, #ff1f44, #d50082 );
   width: 0;
