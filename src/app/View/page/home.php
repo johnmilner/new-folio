@@ -241,6 +241,7 @@
                     <div id="h-btn-cover-3" class="h-btn-cover"></div>
                 </div>
             </div>
+            <div id="gloss-overlay"></div>
             <div id="h-img-wrap-0" class="h-img-wrap"><img id="h-img-0" class="h-img" src="/static/media/img/home/case/surf.png" alt=""> <img id="h-img-0-b" class="h-img" src="/static/media/img/home/case/img-0-b.png" alt=""></div>
             <div id="h-img-wrap-1" class="h-img-wrap"><img id="h-img-1" class="h-img" src="/static/media/img/home/case/img-1.jpg" alt=""></div>
             <div id="h-img-wrap-2" class="h-img-wrap"><img id="h-img-2" class="h-img" src="/static/media/img/home/case/img-2.jpg" alt=""></div>
