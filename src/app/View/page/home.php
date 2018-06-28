@@ -247,9 +247,9 @@
                 <div class="progress-container"><div id="progress" class="progress"></div></div>
             </div>
                 <div class="h-pagi-prog-no-wrap oh">
-                    <div class="h-pagi-prog-no-wrap oh">
+                    <!-- <div class="h-pagi-prog-no-wrap oh">
                         <div class="h-pagi-prog-no">01</div>
-                    </div>
+                    </div> -->
                     <div class="h-pagi-prog-no-wrap oh">
                         <div class="h-pagi-prog-no">02</div>
                     </div>

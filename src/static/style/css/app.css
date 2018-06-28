@@ -4637,10 +4637,11 @@ a:hover {
   .h-pagi-prog-no-wrap {
   position: absolute;
   z-index: 0;
-  top: 10%;
-  left: 17%;
-  /* height: 1px; */
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 6%;
+  left: 5%;
+  /* text-align: center; */
   font-family: trump-gothic-pro;
   font-size: calc(1rem + 4.2vw);
   color: white;
@@ -4659,8 +4660,8 @@ a:hover {
   .progress-container{
   position: absolute;
   bottom: 50%;
-  left: 45%;
-  width: 60%;
+  left: 35%;
+  width: 50%;
   height: 4px;
   background: gray;
 }
