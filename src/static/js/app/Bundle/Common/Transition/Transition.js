@@ -131,7 +131,6 @@ Transition.scrollInit()
      Transition.enable_scroll = function() {
         const body = S.Dom.body
         S.Listen(body, 'add', 'mouseWheel', Transition.headerScroll)
-        
 
       }
 
@@ -548,10 +547,17 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         }
     }
 
+    Transition.updateProgress = function(num1) {
+        var percent = Math.ceil( num1 * 100 / 8 ) + '%';
+        document.getElementById('progress').style.width = percent;
+    }
+
     Transition.n2 = function() {
 
 
         Transition.next()
+            // var height = document.body.getBoundingClientRect().height - window.innerHeight;
+        Transition.updateProgress(Transition.currentStep + 1);
         
         Transition.textInOut = new S.Timeline()
         const isObj8 = S.Is.object(Transition.textInOut)
@@ -619,6 +625,8 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
     Transition.p2 = function() {
 
         Transition.prev()
+
+        Transition.updateProgress(Transition.currentStep);
 
         Transition.textOutIn = new S.Timeline()
         const isObj10 = S.Is.object(Transition.textOutIn)
@@ -691,6 +699,11 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
 
     }
 
+    // window.addEventListener('scroll', function(){
+    //     var top = window.scrollY;
+    //     var height = document.body.getBoundingClientRect().height - window.innerHeight;
+    //     updateProgress(top, height);
+    // });  
 
     if ( !event ) { // if the event is not provided, we get it from the window object
         event = window.event;
@@ -709,11 +722,15 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         } else if (delta > 0 && divOffset.top < -600) {
 
             Transition.p2()
+            var top = window.scrollY;
+            var height = document.body.getBoundingClientRect().height - window.innerHeight;
+            updateProgress(top, height);
 
 
         } else if (delta < 0 && divOffset.top < -600) {
 
             Transition.n2()
+            
             
         } 
 

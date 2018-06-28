@@ -242,6 +242,32 @@
                 </div>
             </div>
             <div id="gloss-overlay"></div>
+            <div id="h-pagi-progress">
+            <div class="progress-container"><div id="progress" class="progress"></div></div>
+                <div class="h-pagi-prog-no-wrap oh">
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">01</div>
+                    </div>
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">02</div>
+                    </div>
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">03</div>
+                    </div>
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">04</div>
+                    </div>
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">05</div>
+                    </div>
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">06</div>
+                    </div>
+                    <div class="h-pagi-prog-no-wrap oh">
+                        <div class="h-pagi-prog-no">07</div>
+                    </div>
+                </div>
+            </div>
             <div id="h-img-wrap-0" class="h-img-wrap"><img id="h-img-0" class="h-img" src="/static/media/img/home/case/surf.png" alt=""> <img id="h-img-0-b" class="h-img" src="/static/media/img/home/case/img-0-b.png" alt=""></div>
             <div id="h-img-wrap-1" class="h-img-wrap"><img id="h-img-1" class="h-img" src="/static/media/img/home/case/img-1.jpg" alt=""></div>
             <div id="h-img-wrap-2" class="h-img-wrap"><img id="h-img-2" class="h-img" src="/static/media/img/home/case/img-2.jpg" alt=""></div>

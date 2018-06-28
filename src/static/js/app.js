@@ -11053,9 +11053,16 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         }
     };
 
+    Transition.updateProgress = function (num1) {
+        var percent = Math.ceil(num1 * 100 / 8) + '%';
+        document.getElementById('progress').style.width = percent;
+    };
+
     Transition.n2 = function () {
 
         Transition.next();
+        // var height = document.body.getBoundingClientRect().height - window.innerHeight;
+        Transition.updateProgress(Transition.currentStep + 1);
 
         Transition.textInOut = new skylake.Timeline();
         var isObj8 = skylake.Is.object(Transition.textInOut);
@@ -11120,6 +11127,8 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
 
         Transition.prev();
 
+        Transition.updateProgress(Transition.currentStep);
+
         Transition.textOutIn = new skylake.Timeline();
         var isObj10 = skylake.Is.object(Transition.textOutIn);
         var t = -1;
@@ -11180,6 +11189,12 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
             } });
     };
 
+    // window.addEventListener('scroll', function(){
+    //     var top = window.scrollY;
+    //     var height = document.body.getBoundingClientRect().height - window.innerHeight;
+    //     updateProgress(top, height);
+    // });  
+
     if (!event) {
         // if the event is not provided, we get it from the window object
         event = window.event;
@@ -11199,6 +11214,9 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         } else if (delta > 0 && divOffset.top < -600) {
 
             Transition.p2();
+            var top = window.scrollY;
+            var height = document.body.getBoundingClientRect().height - window.innerHeight;
+            updateProgress(top, height);
         } else if (delta < 0 && divOffset.top < -600) {
 
             Transition.n2();
