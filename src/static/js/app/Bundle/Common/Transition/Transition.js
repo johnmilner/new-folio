@@ -147,7 +147,7 @@ Transition.scrollInit()
 
         if (Transition.currentStep === 1) {
 
-            Transition.imgReset()
+            //Transition.imgReset()
         } 
 
         if (Transition.currentStep === 4) {
@@ -291,6 +291,9 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         Transition.headerDown.from({el: Transition.arrBotTitle[1], p: {y: [0, 100]}, d: 600, e: 'Power4InOut'})
         Transition.headerDown.from({el: Transition.arrBotTitle[2], p: {y: [0, 100]}, d: 600, e: 'Power4InOut'})
 
+        Transition.imgReset()
+
+
         //Transition.headerDown.from({el: '#h-txt-desc-line', p: {x: [-110, 0]}, d: 2800, e: 'Power4InOut'})
 
         // Transition.headerDown.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {opacity: [1, 0]}, d: 600, e: 'Power4InOut'})
@@ -333,10 +336,10 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         Transition.arrTopPagiWrap[Transition.currentStep + 1].style.height = "auto";
         Transition.arrTopTitleWrap[Transition.currentStep + 1].style.height = "auto";
 
-        textInit.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [-100, 0]}, d: 2800, e: 'Power4InOut'})
+        textInit.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [-100, 0]}, d: 1200, e: 'Power4InOut'})
 
-        textInit.from({el: '#h-pagi-line', p: {x: [-100, 0]}, d: 2000, e: 'Power4InOut'})
-        textInit.from({el: '#h-pagi-bottom-marker', p: {y: [100, 0]}, d: 2800, e: 'Power4InOut'})
+        textInit.from({el: '#h-pagi-line', p: {x: [-100, 0], opacity: [0, 1]}, d: 1200, e: 'Power4InOut'})
+        textInit.from({el: '#h-pagi-bottom-marker', p: {y: [100, 0]}, d: 1200, e: 'Power4InOut'})
 
 
         textInit.from({el: "#h-img-" + Transition.currentStep, p: {opacity: [0, 1], y:[-60, 0]}, d: 1200, delay: 400, e: 'Power4InOut'})
@@ -365,10 +368,10 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         const isObj23 = S.Is.object(imgReset)
 
         // imgReset.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [0, -100]}, d: 2800, e: 'Power4InOut'})
-
-        imgReset.from({el: '#h-pagi-line', p: {x: [0, 100]}, d: 2000, e: 'Power4InOut'})
-        imgReset.from({el: '#h-pagi-bottom-marker', p: {y: [0, -100]}, d: 2800, e: 'Power4InOut'})
-
+        //if (Transition.currentStep <= 0) {
+        imgReset.from({el: '#h-pagi-line', p: {x: [0, 100]}, d: 1200, e: 'Power4InOut'})
+        imgReset.from({el: '#h-pagi-bottom-marker', p: {y: [0, -100]}, d: 1200, e: 'Power4InOut'})
+        //}
         //imgReset.from({el: "#h-img-0-b", p: {opacity: [1, 0], x:[0, 4]}, d: 600, e: 'Power4InOut'})
         imgReset.play()
     }
@@ -632,9 +635,9 @@ Transition.headerScroll = (currentScrollY, delta, event) => {
         Transition.textOutIn.from({el: Transition.arrBotAgency[Transition.currentStep], p: {y: [0, 100]}, d: 1200, e: 'Power4InOut'})
         Transition.textOutIn.from({el: Transition.arrBotYear[Transition.currentStep], p: {y: [0, 100]}, d: 1200, e: 'Power4InOut'})
 
-        if (Transition.currentStep === 0) {
-            Transition.textOutIn.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [0, 100]}, d: 2800, e: 'Power4InOut'})
-            Transition.imgReset()
+        if (Transition.currentStep <=  0) {
+            Transition.textOutIn.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [0, 100]}, d: 1200, delay: 300, e: 'Power4InOut'})
+            
         } else {
             Transition.textOutIn.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {x: [0, 100]}, d: 1200, e: 'Power4InOut'}) 
         }
