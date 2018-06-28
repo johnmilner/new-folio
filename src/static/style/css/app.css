@@ -3266,6 +3266,7 @@ a:hover {
   background: rgba(255, 255, 255, .2);
   -webkit-transform: translate3d(-100, 0, 0);
           transform: translate3d(-100, 0, 0);
+
 }
   
   #h-pagi-top {
@@ -3279,7 +3280,7 @@ a:hover {
   bottom: -28px;
   left: 0;
   width: 100%;
-
+  opacity: 1;
 }
   
   .h-pagi-top-no-wrap,
@@ -3309,14 +3310,15 @@ a:hover {
   float: left;
   padding: 7px 0;
   width: 100%;
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0%, 100%, 0);
+          transform: translate3d(0%, 100%, 0);
   line-height: auto;
 }
   
   .h-pagi-top-no {
   color: rgba(255, 255, 255, .3);
   opacity: 1;
+
 }
   
   #h-pagi-bottom-marker {
@@ -3325,6 +3327,7 @@ a:hover {
   bottom: 5vw !important;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
+
 }
   
   #h-pagi-bottom {

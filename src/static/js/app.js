@@ -10815,12 +10815,12 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         Transition.headerDown.from({ el: Transition.arrBotTitle[1], p: { y: [0, 100] }, d: 600, e: 'Power4InOut' });
         Transition.headerDown.from({ el: Transition.arrBotTitle[2], p: { y: [0, 100] }, d: 600, e: 'Power4InOut' });
 
-        Transition.headerDown.from({ el: Transition.arrPagiTopNo[Transition.currentStep], p: { y: [0, -100] }, d: 1200, e: 'Power4InOut' });
-
         //Transition.headerDown.from({el: '#h-txt-desc-line', p: {x: [-110, 0]}, d: 2800, e: 'Power4InOut'})
 
-        Transition.headerDown.from({ el: '#h-pagi-line', p: { x: [0, -100] }, d: 1200, e: 'Power4InOut' });
-        Transition.headerDown.from({ el: '#h-pagi-bottom-marker', p: { y: [0, 100] }, d: 1200, e: 'Power4InOut' });
+        // Transition.headerDown.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {opacity: [1, 0]}, d: 600, e: 'Power4InOut'})
+        // Transition.headerDown.from({el: '#h-pagi-bottom-marker', p: {opacity: [1, 0]}, d: 600, e: 'Power4InOut'})
+        // Transition.headerDown.from({el: '#h-pagi-line', p: {opacity: [1, 0]}, d: 600, e: 'Power4InOut'})
+
         //Transition.headerDown.from({el: '.scroll-icon', p: {opacity: [0, 1]}, d: 1200, e: 'Power4InOut'})
 
         // Transition.headerDown.from({el: "#h-img-0", p: {opacity: [1, 0], y:[0, 100]}, d: 1200, e: 'Power4InOut'})
@@ -10881,6 +10881,11 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
 
         var imgReset = new skylake.Timeline();
         var isObj23 = skylake.Is.object(imgReset);
+
+        // imgReset.from({el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: {y: [0, -100]}, d: 2800, e: 'Power4InOut'})
+
+        imgReset.from({ el: '#h-pagi-line', p: { x: [0, 100] }, d: 2000, e: 'Power4InOut' });
+        imgReset.from({ el: '#h-pagi-bottom-marker', p: { y: [0, -100] }, d: 2800, e: 'Power4InOut' });
 
         //imgReset.from({el: "#h-img-0-b", p: {opacity: [1, 0], x:[0, 4]}, d: 600, e: 'Power4InOut'})
         imgReset.play();
@@ -11132,15 +11137,15 @@ Transition.headerScroll = function (currentScrollY, delta, event) {
         Transition.textOutIn.from({ el: Transition.arrBotAgency[Transition.currentStep], p: { y: [0, 100] }, d: 1200, e: 'Power4InOut' });
         Transition.textOutIn.from({ el: Transition.arrBotYear[Transition.currentStep], p: { y: [0, 100] }, d: 1200, e: 'Power4InOut' });
 
-        Transition.textOutIn.from({ el: Transition.arrPagiTopNo[Transition.currentStep + 1],
-            p: { x: [0, 100] }, d: 1200, e: 'Power4InOut' });
+        if (Transition.currentStep === 0) {
+            Transition.textOutIn.from({ el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: { y: [0, 100] }, d: 2800, e: 'Power4InOut' });
+            Transition.imgReset();
+        } else {
+            Transition.textOutIn.from({ el: Transition.arrPagiTopNo[Transition.currentStep + 1], p: { x: [0, 100] }, d: 1200, e: 'Power4InOut' });
+        }
 
         if (Transition.currentStep < 4) {
             Transition.textOutIn.from({ el: "#h-img-" + Transition.currentStep, p: { opacity: [1, 0], y: [0, -60] }, d: 1200, e: 'Power4InOut' });
-        }
-
-        if (Transition.currentStep === 0) {
-            Transition.imgReset();
         }
 
         Transition.textOutIn.play({ cb: function cb() {

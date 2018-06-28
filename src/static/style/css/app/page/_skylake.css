@@ -2154,6 +2154,7 @@ svg:not(:root) {
   right: 0;
   background: rgba(255, 255, 255, .2);
   transform: translate3d(-100, 0, 0);
+
 }
 
 #h-pagi-top {
@@ -2167,7 +2168,7 @@ svg:not(:root) {
   bottom: -28px;
   left: 0;
   width: 100%;
-
+  opacity: 1;
 }
 
 
@@ -2197,13 +2198,14 @@ svg:not(:root) {
   float: left;
   padding: 7px 0;
   width: 100%;
-  transform: translate3d(0, 100%, 0);
+  transform: translate3d(0%, 100%, 0);
   line-height: auto;
 }
 
 .h-pagi-top-no {
   color: rgba(255, 255, 255, .3);
   opacity: 1;
+
 }
 
 #h-pagi-bottom-marker {
@@ -2211,6 +2213,7 @@ svg:not(:root) {
   right: 40px !important;
   bottom: 5vw !important;
   transform: translate3d(0, 100%, 0);
+
 }
 
 #h-pagi-bottom {

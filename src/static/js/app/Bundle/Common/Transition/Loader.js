@@ -29,7 +29,6 @@ const t = 1
 
 Loader.pr.from({el: ".loader-line", p: { x: [-100, 0] }, d: 6000, e: "Power4InOut", delay: 900});
 
-
 Loader.run = function() {
 
     Loader.pr.play({cb: intro})
